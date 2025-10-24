@@ -1,0 +1,5 @@
+# GitHub Packages用の設定
+# このファイルを .npmrc にリネームして使用してください
+
+@brick-lehm:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
