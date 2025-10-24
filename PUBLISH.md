@@ -1,12 +1,56 @@
 # GitHub Packagesへの公開手順
 
-このドキュメントでは、`@brick-lehm/xium-ui` パッケージをGitHub Packagesに公開する手順を説明します。
+このドキュメントでは、`@brick-lehm/xium-ui` パッケージをGitHub Packagesに公開する方法の概要を説明します。
+
+## リリース方法
+
+このプロジェクトでは、2つのリリース方法をサポートしています：
+
+### 📦 [GitHub Actionsを使用した自動リリース（推奨）](./RELEASE_GITHUB_ACTIONS.md)
+
+タグをプッシュするだけで、自動的にビルド・公開が実行されます。
+
+**推奨する理由：**
+- ✅ 手順が簡単（タグをプッシュするだけ）
+- ✅ ビルド環境が一貫している
+- ✅ Personal Access Tokenを手動で管理する必要がない
+- ✅ 実行履歴が残る
+
+**クイックスタート：**
+```bash
+npm version patch        # バージョン更新
+git push --follow-tags   # 自動公開開始
+```
+
+➡️ **詳細は [RELEASE_GITHUB_ACTIONS.md](./RELEASE_GITHUB_ACTIONS.md) を参照してください**
+
+### 🔧 [手動リリース](./RELEASE_MANUAL.md)
+
+ローカル環境から直接公開する方法です。
+
+**こんな場合に使用：**
+- GitHub Actionsが使えない環境
+- トラブルシューティングが必要な場合
+- 詳細な制御が必要な場合
+
+**クイックスタート：**
+```bash
+export GITHUB_TOKEN=your_token
+npm version patch
+yarn build:lib
+npm publish
+git push --follow-tags
+```
+
+➡️ **詳細は [RELEASE_MANUAL.md](./RELEASE_MANUAL.md) を参照してください**
+
+---
 
 ## 前提条件
 
-- GitHubリポジトリが作成されていること
+- GitHubリポジトリが作成されていること（https://github.com/brick-lehm/xium-ui）
 - Node.js 20以上がインストールされていること
-- GitHub Personal Access Token (PAT) を持っていること
+- リポジトリへの書き込み権限があること
 
 ## 公開手順
 
