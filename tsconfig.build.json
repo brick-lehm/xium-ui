@@ -21,8 +21,18 @@
     "moduleResolution": "node"
   },
   "include": [
+    "src/index.ts",
     "src/theme/**/*.ts",
-    "src/theme/**/*.tsx"
+    "src/theme/**/*.tsx",
+    "src/components/**/*.ts",
+    "src/components/**/*.tsx",
+    "src/layouts/**/*.ts",
+    "src/layouts/**/*.tsx",
+    "src/routes/**/*.ts",
+    "src/routes/**/*.tsx",
+    "src/locales/**/*.ts",
+    "src/locales/**/*.tsx",
+    "src/global-config.ts"
   ],
   "exclude": [
     "node_modules",
