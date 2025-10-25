@@ -1,10 +1,10 @@
 'use client';
 
-import 'dayjs/locale/en';
-import 'dayjs/locale/vi';
-import 'dayjs/locale/fr';
-import 'dayjs/locale/zh-cn';
-import 'dayjs/locale/ar-sa';
+import 'dayjs/locale/en.js';
+import 'dayjs/locale/vi.js';
+import 'dayjs/locale/fr.js';
+import 'dayjs/locale/zh-cn.js';
+import 'dayjs/locale/ar-sa.js';
 
 import dayjs from 'dayjs';
 

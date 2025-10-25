@@ -1,0 +1,342 @@
+(index):8  GET http://localhost:3001/recurring-billing-form/runtime-config.js net::ERR_ABORTED 404 (Not Found)
+(index):1 Refused to execute script from 'http://localhost:3001/recurring-billing-form/runtime-config.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.
+VM321 index.js:485 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
+VM314 log.js:39 [HMR] Waiting for update signal from WDS...
+main.ea6621baac7ff64cbfb0.js:3655 Download the React DevTools for a better development experience: https://react.dev/link/react-devtools
+use-router.mjs:8 Uncaught Error: Cannot find module 'next/navigation'
+    at webpackMissingModule (use-router.mjs:8:50)
+    at eval (use-router.mjs:8:140)
+    at ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/use-router.mjs (main.ea6621baac7ff64cbfb0.js:118:1)
+    at __webpack_require__ (main.ea6621baac7ff64cbfb0.js:4259:32)
+    at fn (main.ea6621baac7ff64cbfb0.js:4548:21)
+    at eval (use-locales.mjs:9:81)
+    at ./node_modules/@brick-lehm/xium-ui/dist/locales/use-locales.mjs (main.ea6621baac7ff64cbfb0.js:107:1)
+    at __webpack_require__ (main.ea6621baac7ff64cbfb0.js:4259:32)
+    at fn (main.ea6621baac7ff64cbfb0.js:4548:21)
+    at eval (theme-provider.mjs:8:76)
+webpackMissingModule @ use-router.mjs:8
+eval @ use-router.mjs:8
+./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/use-router.mjs @ main.ea6621baac7ff64cbfb0.js:118
+__webpack_require__ @ main.ea6621baac7ff64cbfb0.js:4259
+fn @ main.ea6621baac7ff64cbfb0.js:4548
+eval @ use-locales.mjs:9
+./node_modules/@brick-lehm/xium-ui/dist/locales/use-locales.mjs @ main.ea6621baac7ff64cbfb0.js:107
+__webpack_require__ @ main.ea6621baac7ff64cbfb0.js:4259
+fn @ main.ea6621baac7ff64cbfb0.js:4548
+eval @ theme-provider.mjs:8
+./node_modules/@brick-lehm/xium-ui/dist/theme/theme-provider.mjs @ main.ea6621baac7ff64cbfb0.js:745
+__webpack_require__ @ main.ea6621baac7ff64cbfb0.js:4259
+fn @ main.ea6621baac7ff64cbfb0.js:4548
+eval @ index.tsx:6
+./src/index.tsx @ main.ea6621baac7ff64cbfb0.js:4232
+__webpack_require__ @ main.ea6621baac7ff64cbfb0.js:4259
+(anonymous) @ main.ea6621baac7ff64cbfb0.js:5590
+(anonymous) @ main.ea6621baac7ff64cbfb0.js:5592
+remoteEntry.js:260 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
+remoteEntry.js:423 [HMR] Waiting for update signal from WDS...
+VM321 index.js:493 [webpack-dev-server] Errors while compiling. Reload prevented.
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:292
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/locales-config.mjs 72:74-117
+Module not found: Error: Can't resolve './langs' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/localization-provider.mjs 3:0-25
+Module not found: Error: Can't resolve 'dayjs/locale/en' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+Did you mean 'en.js'?
+BREAKING CHANGE: The request 'dayjs/locale/en' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/localization-provider.mjs 4:0-25
+Module not found: Error: Can't resolve 'dayjs/locale/vi' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+Did you mean 'vi.js'?
+BREAKING CHANGE: The request 'dayjs/locale/vi' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/localization-provider.mjs 5:0-25
+Module not found: Error: Can't resolve 'dayjs/locale/fr' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+Did you mean 'fr.js'?
+BREAKING CHANGE: The request 'dayjs/locale/fr' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/localization-provider.mjs 6:0-28
+Module not found: Error: Can't resolve 'dayjs/locale/zh-cn' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+Did you mean 'zh-cn.js'?
+BREAKING CHANGE: The request 'dayjs/locale/zh-cn' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/localization-provider.mjs 7:0-28
+Module not found: Error: Can't resolve 'dayjs/locale/ar-sa' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+Did you mean 'ar-sa.js'?
+BREAKING CHANGE: The request 'dayjs/locale/ar-sa' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/index.mjs 1:0-45
+export 'useParams' (reexported as 'useParams') was not found in './use-params.mjs' (module has no exports)
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/index.mjs 3:0-49
+export 'usePathname' (reexported as 'usePathname') was not found in './use-pathname.mjs' (module has no exports)
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/index.mjs 4:0-58
+export 'useSearchParams' (reexported as 'useSearchParams') was not found in './use-search-params.mjs' (module has no exports)
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/use-params.mjs 1:0-44
+Module not found: Error: Can't resolve 'next/navigation' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/routes/hooks'
+Did you mean 'navigation.js'?
+BREAKING CHANGE: The request 'next/navigation' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/use-pathname.mjs 1:0-46
+Module not found: Error: Can't resolve 'next/navigation' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/routes/hooks'
+Did you mean 'navigation.js'?
+BREAKING CHANGE: The request 'next/navigation' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/use-router.mjs 4:0-61
+Module not found: Error: Can't resolve 'next/navigation' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/routes/hooks'
+Did you mean 'navigation.js'?
+BREAKING CHANGE: The request 'next/navigation' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+VM321 index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/use-search-params.mjs 1:0-50
+Module not found: Error: Can't resolve 'next/navigation' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/routes/hooks'
+Did you mean 'navigation.js'?
+BREAKING CHANGE: The request 'next/navigation' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ VM321 index.js:493
+eval @ VM321 index.js:634
+error @ VM321 index.js:156
+errors @ VM313 index.js:301
+eval @ VM318 socket.js:70
+client.onmessage @ VM319 WebSocketClient.js:50
+index.js:493 [webpack-dev-server] Errors while compiling. Reload prevented.
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:292
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/locales-config.mjs 72:74-117
+Module not found: Error: Can't resolve './langs' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/localization-provider.mjs 3:0-25
+Module not found: Error: Can't resolve 'dayjs/locale/en' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+Did you mean 'en.js'?
+BREAKING CHANGE: The request 'dayjs/locale/en' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/localization-provider.mjs 4:0-25
+Module not found: Error: Can't resolve 'dayjs/locale/vi' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+Did you mean 'vi.js'?
+BREAKING CHANGE: The request 'dayjs/locale/vi' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/localization-provider.mjs 5:0-25
+Module not found: Error: Can't resolve 'dayjs/locale/fr' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+Did you mean 'fr.js'?
+BREAKING CHANGE: The request 'dayjs/locale/fr' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/localization-provider.mjs 6:0-28
+Module not found: Error: Can't resolve 'dayjs/locale/zh-cn' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+Did you mean 'zh-cn.js'?
+BREAKING CHANGE: The request 'dayjs/locale/zh-cn' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/locales/localization-provider.mjs 7:0-28
+Module not found: Error: Can't resolve 'dayjs/locale/ar-sa' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/locales'
+Did you mean 'ar-sa.js'?
+BREAKING CHANGE: The request 'dayjs/locale/ar-sa' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/index.mjs 1:0-45
+export 'useParams' (reexported as 'useParams') was not found in './use-params.mjs' (module has no exports)
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/index.mjs 3:0-49
+export 'usePathname' (reexported as 'usePathname') was not found in './use-pathname.mjs' (module has no exports)
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/index.mjs 4:0-58
+export 'useSearchParams' (reexported as 'useSearchParams') was not found in './use-search-params.mjs' (module has no exports)
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/use-params.mjs 1:0-44
+Module not found: Error: Can't resolve 'next/navigation' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/routes/hooks'
+Did you mean 'navigation.js'?
+BREAKING CHANGE: The request 'next/navigation' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/use-pathname.mjs 1:0-46
+Module not found: Error: Can't resolve 'next/navigation' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/routes/hooks'
+Did you mean 'navigation.js'?
+BREAKING CHANGE: The request 'next/navigation' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/use-router.mjs 4:0-61
+Module not found: Error: Can't resolve 'next/navigation' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/routes/hooks'
+Did you mean 'navigation.js'?
+BREAKING CHANGE: The request 'next/navigation' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+logger @ index.js:493
+eval @ index.js:634
+error @ index.js:156
+errors @ index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true:301
+eval @ socket.js:70
+client.onmessage @ WebSocketClient.js:50
+index.js:493 [webpack-dev-server] ERROR in ./node_modules/@brick-lehm/xium-ui/dist/routes/hooks/use-search-params.mjs 1:0-50
+Module not found: Error: Can't resolve 'next/navigation' in '/Volumes/KIOXIA/xium/cost-management/xium-invoice/mfe/recurring-billing-form/node_modules/@brick-lehm/xium-ui/dist/routes/hooks'
+Did you mean 'navigation.js'?
+BREAKING CHANGE: The request 'next/navigation' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.

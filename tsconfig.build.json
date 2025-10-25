@@ -30,6 +30,7 @@
     "src/components/snackbar/**/*.tsx",
     "src/locales/**/*.ts",
     "src/locales/**/*.tsx",
+    "src/locales/**/*.json",
     "src/routes/hooks/**/*.ts",
     "src/routes/hooks/**/*.tsx",
     "src/global-config.ts"

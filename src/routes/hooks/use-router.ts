@@ -1,7 +1,7 @@
 import NProgress from 'nprogress';
 import { useMemo, useCallback } from 'react';
 import { isEqualPath } from 'minimal-shared/utils';
-import { useRouter as useNextRouter } from 'next/navigation';
+import { useRouter as useNextRouter } from 'next/navigation.js';
 
 // ----------------------------------------------------------------------
 

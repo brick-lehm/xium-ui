@@ -102,22 +102,35 @@ function moveEsmFiles(srcDir, destDir) {
     const srcPath = path.join(srcDir, file);
     const stats = fs.statSync(srcPath);
 
-    if (stats.isFile() && file.endsWith('.js')) {
-      const destPath = path.join(destDir, file.replace('.js', '.mjs'));
-      const destDirPath = path.dirname(destPath);
+    if (stats.isFile()) {
+      if (file.endsWith('.js')) {
+        const destPath = path.join(destDir, file.replace('.js', '.mjs'));
+        const destDirPath = path.dirname(destPath);
 
-      if (!fs.existsSync(destDirPath)) {
-        fs.mkdirSync(destDirPath, { recursive: true });
+        if (!fs.existsSync(destDirPath)) {
+          fs.mkdirSync(destDirPath, { recursive: true });
+        }
+
+        fs.copyFileSync(srcPath, destPath);
+        console.log(`Copied ${file} to ${destPath}`);
+
+        // Convert absolute imports to relative paths
+        convertAbsoluteToRelative(destPath, destDir);
+
+        // Fix ESM imports in the copied .mjs file
+        fixEsmImports(destPath);
+      } else if (file.endsWith('.json')) {
+        // Copy JSON files as-is
+        const destPath = path.join(destDir, file);
+        const destDirPath = path.dirname(destPath);
+
+        if (!fs.existsSync(destDirPath)) {
+          fs.mkdirSync(destDirPath, { recursive: true });
+        }
+
+        fs.copyFileSync(srcPath, destPath);
+        console.log(`Copied ${file} to ${destPath}`);
       }
-
-      fs.copyFileSync(srcPath, destPath);
-      console.log(`Copied ${file} to ${destPath}`);
-
-      // Convert absolute imports to relative paths
-      convertAbsoluteToRelative(destPath, destDir);
-
-      // Fix ESM imports in the copied .mjs file
-      fixEsmImports(destPath);
     }
   });
 
@@ -156,12 +169,46 @@ function fixCommonJsAbsolutePaths(distDir) {
   console.log('Fixed absolute paths in CommonJS files');
 }
 
+// Copy JSON files from src to dist
+function copyJsonFiles(srcDir, distDir) {
+  const localesLangsPath = path.join(srcDir, 'locales/langs');
+
+  if (fs.existsSync(localesLangsPath)) {
+    const destLangsPath = path.join(distDir, 'locales/langs');
+
+    if (!fs.existsSync(destLangsPath)) {
+      fs.mkdirSync(destLangsPath, { recursive: true });
+    }
+
+    const files = fs.readdirSync(localesLangsPath, { recursive: true });
+
+    files.forEach(file => {
+      const srcPath = path.join(localesLangsPath, file);
+      const stats = fs.statSync(srcPath);
+
+      if (stats.isFile() && file.endsWith('.json')) {
+        const destPath = path.join(destLangsPath, file);
+        const destDirPath = path.dirname(destPath);
+
+        if (!fs.existsSync(destDirPath)) {
+          fs.mkdirSync(destDirPath, { recursive: true });
+        }
+
+        fs.copyFileSync(srcPath, destPath);
+        console.log(`Copied JSON: ${file}`);
+      }
+    });
+  }
+}
+
 // Main execution
 const distDir = path.join(__dirname, '../dist');
+const srcDir = path.join(__dirname, '../src');
 const esmDir = path.join(distDir, 'esm');
 
 moveEsmFiles(esmDir, distDir);
 fixCommonJsAbsolutePaths(distDir);
+copyJsonFiles(srcDir, distDir);
 createPackageJson();
 
 console.log('Post-build script completed successfully!');
