@@ -1,5 +1,6 @@
 // Theme exports
 export * from './theme';
+export { ThemeProvider, StandaloneThemeProvider } from './theme';
 
 // Component exports
 export * from './components/animate';
