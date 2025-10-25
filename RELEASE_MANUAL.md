@@ -16,8 +16,8 @@
 1. GitHubで Settings → Developer settings → Personal access tokens → Tokens (classic) にアクセス
 2. "Generate new token (classic)" をクリック
 3. 以下のスコープを選択：
-   - ✅ `write:packages` - パッケージの公開に必要
-   - ✅ `read:packages` - パッケージの読み取りに必要
+   - `write:packages` - パッケージの公開に必要
+   - `read:packages` - パッケージの読み取りに必要
 4. トークンを生成してコピー（このトークンは二度と表示されないので必ず保存してください）
 
 ### ステップ2: 環境変数の設定

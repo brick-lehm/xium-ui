@@ -39,3 +39,4 @@ tsconfig.tsbuildinfo
 .serena
 .npmrc
 deploy/
+.github

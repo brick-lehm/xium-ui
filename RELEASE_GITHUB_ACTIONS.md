@@ -101,14 +101,14 @@ git push origin main
 6. リリースノートを記入：
 
 ```markdown
-## 🚀 新機能
+## 新機能
 - 新しいテーマカラーを追加
 
-## 🐛 バグ修正
+## バグ修正
 - ダークモードでのコントラスト問題を修正
 - TypeScript型定義を改善
 
-## 📝 ドキュメント
+## ドキュメント
 - README.mdを更新
 - 使用例を追加
 ```
@@ -131,19 +131,19 @@ git push origin main
 
 ワークフローは以下のステップを実行します：
 
-1. ✅ **Set up job** - 実行環境のセットアップ
-2. ✅ **Checkout** - コードの取得
-3. ✅ **Setup Node.js** - Node.js環境の準備
-4. ✅ **Install dependencies** - 依存関係のインストール
-5. ✅ **Build library** - ライブラリのビルド
-6. ✅ **Publish to GitHub Packages** - パッケージの公開
-7. ✅ **Complete job** - 完了
+1. **Set up job** - 実行環境のセットアップ
+2. **Checkout** - コードの取得
+3. **Setup Node.js** - Node.js環境の準備
+4. **Install dependencies** - 依存関係のインストール
+5. **Build library** - ライブラリのビルド
+6. **Publish to GitHub Packages** - パッケージの公開
+7. **Complete job** - 完了
 
 ### 成功の確認
 
 ワークフローが成功すると：
-- ✅ すべてのステップに緑色のチェックマークが表示されます
-- 📦 GitHubリポジトリの "Packages" セクションに新しいバージョンが表示されます
+- すべてのステップに緑色のチェックマークが表示されます
+- GitHubリポジトリの "Packages" セクションに新しいバージョンが表示されます
 
 ## トラブルシューティング
 
@@ -186,8 +186,8 @@ yarn build:lib
 **解決策**:
 1. リポジトリの Settings → Actions → General にアクセス
 2. "Workflow permissions" セクションで以下を確認：
-   - ✅ "Read and write permissions" を選択
-   - ✅ "Allow GitHub Actions to create and approve pull requests" をチェック
+   - "Read and write permissions" を選択
+   - "Allow GitHub Actions to create and approve pull requests" をチェック
 3. 設定を保存
 4. ワークフローを再実行
 
@@ -242,19 +242,19 @@ npm version major    # 1.0.0 → 2.0.0
 ```markdown
 ## v1.2.0 - 2024-10-24
 
-### 🚀 新機能
+### 新機能
 - 新しいテーマカラーオプションを追加 (#123)
 - ダークモードのカスタマイズをサポート (#124)
 
-### 🐛 バグ修正
+### バグ修正
 - ボタンコンポーネントのホバー状態を修正 (#125)
 - TypeScript型定義のエラーを解消 (#126)
 
-### 📝 ドキュメント
+### ドキュメント
 - インストール手順を更新
 - 使用例を追加
 
-### 🔧 内部変更
+### 内部変更
 - ビルドプロセスを最適化
 - 依存関係を更新
 ```
