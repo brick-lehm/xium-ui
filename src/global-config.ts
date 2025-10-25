@@ -1,5 +1,3 @@
-import { paths } from 'src/routes/paths';
-
 import packageJson from '../package.json';
 
 // ----------------------------------------------------------------------
@@ -49,7 +47,8 @@ export const CONFIG: ConfigValue = {
   appVersion: packageJson.version,
   serverUrl: getEnv('NEXT_PUBLIC_SERVER_URL'),
   assetsDir: getEnv('NEXT_PUBLIC_ASSETS_DIR'),
-  isStaticExport: JSON.parse(getEnv('BUILD_STATIC_EXPORT', 'false')),
+  // For framework-free environments, default to true (use localStorage instead of cookies)
+  isStaticExport: true,
   /**
    * Auth
    * @method jwt | amplify | firebase | supabase | auth0
@@ -57,7 +56,7 @@ export const CONFIG: ConfigValue = {
   auth: {
     method: 'jwt',
     skip: false,
-    redirectPath: paths.dashboard.root,
+    redirectPath: '/dashboard',
   },
   /**
    * Firebase

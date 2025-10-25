@@ -31,8 +31,6 @@
     "src/locales/**/*.ts",
     "src/locales/**/*.tsx",
     "src/locales/**/*.json",
-    "src/routes/hooks/**/*.ts",
-    "src/routes/hooks/**/*.tsx",
     "src/global-config.ts"
   ],
   "exclude": [
@@ -44,6 +42,8 @@
     "**/*.spec.ts",
     "**/*.spec.tsx",
     ".storybook",
-    "storybook-static"
+    "storybook-static",
+    "src/locales/server.ts",
+    "src/routes/**"
   ]
 }

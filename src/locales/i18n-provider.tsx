@@ -11,7 +11,12 @@ import { initReactI18next, I18nextProvider as Provider } from 'react-i18next';
 
 import { CONFIG } from 'src/global-config';
 
-import { i18nOptions, fallbackLng, storageConfig, i18nResourceLoader } from './locales-config';
+import {
+  i18nOptions,
+  fallbackLng,
+  storageConfig,
+  translationResources,
+} from './locales-config';
 
 // ----------------------------------------------------------------------
 
@@ -25,13 +30,17 @@ if (CONFIG.isStaticExport) {
 }
 
 /**
- * Initialize i18next
+ * Initialize i18next with static resources
  */
 const initOptions: InitOptions = CONFIG.isStaticExport
-  ? { ...i18nOptions(i18nextLng), detection: { caches: ['localStorage'] } }
-  : { ...i18nOptions(), detection: { caches: ['cookie'] } };
+  ? {
+      ...i18nOptions(i18nextLng),
+      detection: { caches: ['localStorage'] },
+      resources: translationResources,
+    }
+  : { ...i18nOptions(), detection: { caches: ['cookie'] }, resources: translationResources };
 
-i18next.use(LanguageDetector).use(initReactI18next).use(i18nResourceLoader).init(initOptions);
+i18next.use(LanguageDetector).use(initReactI18next).init(initOptions);
 
 // ----------------------------------------------------------------------
 
