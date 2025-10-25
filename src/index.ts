@@ -1,11 +1,14 @@
 // Theme exports
 export * from './theme';
-export { StandaloneThemeProvider } from './theme';
 
-// Theme provider with settings support (requires settings and locales)
-export { ThemeProvider } from './theme/theme-provider';
+// Default ThemeProvider (standalone, no settings required)
+export { StandaloneThemeProvider, StandaloneThemeProvider as ThemeProvider } from './theme';
 
-// Settings exports (required for ThemeProvider)
+// Advanced ThemeProvider with settings and locales support
+// Usage: Wrap with SettingsProvider and I18nProvider first
+export { ThemeProvider as ThemeProviderWithSettings } from './theme/theme-provider';
+
+// Settings exports (required for ThemeProviderWithSettings)
 // Note: SettingsState is already exported from theme/types
 export type {
   SettingsContextValue,
@@ -16,5 +19,5 @@ export { defaultSettings } from './components/settings/settings-config';
 export { SettingsProvider, useSettingsContext } from './components/settings/context';
 export { SettingsDrawer } from './components/settings/drawer';
 
-// Locales exports (required for ThemeProvider)
+// Locales exports (required for ThemeProviderWithSettings)
 export * from './locales';

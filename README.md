@@ -65,6 +65,10 @@ npm install @brick-lehm/xium-ui @mui/material @emotion/react @emotion/styled
 
 **MUI のカスタムテーマを適用するには、必ず `ThemeProvider` でアプリをラップしてください。**
 
+#### オプション1: シンプルな使い方（推奨）
+
+設定や多言語対応が不要な場合は、デフォルトの `ThemeProvider` を使用します：
+
 ```typescript
 // ✅ 推奨: シンプルな使い方
 import { ThemeProvider } from '@brick-lehm/xium-ui';
@@ -76,6 +80,33 @@ function App() {
       {/* MUI コンポーネントにカスタムテーマが自動適用されます */}
       <Button variant="contained">ボタン</Button>
     </ThemeProvider>
+  );
+}
+```
+
+#### オプション2: 高度な使い方（設定・多言語対応）
+
+テーマ設定や多言語対応が必要な場合は、`ThemeProviderWithSettings` を使用します：
+
+```typescript
+import {
+  ThemeProviderWithSettings,
+  SettingsProvider,
+  defaultSettings,
+  I18nProvider,
+} from '@brick-lehm/xium-ui';
+import Button from '@mui/material/Button';
+
+function App() {
+  return (
+    <SettingsProvider defaultSettings={defaultSettings}>
+      <I18nProvider>
+        <ThemeProviderWithSettings>
+          {/* 設定と多言語に対応したテーマ */}
+          <Button variant="contained">ボタン</Button>
+        </ThemeProviderWithSettings>
+      </I18nProvider>
+    </SettingsProvider>
   );
 }
 ```
