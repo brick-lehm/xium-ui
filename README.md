@@ -61,39 +61,86 @@ npm install @brick-lehm/xium-ui @mui/material @emotion/react @emotion/styled
 
 ## 使用方法
 
-### 基本的な使い方
+### ⚠️ 重要: ThemeProvider の使用
+
+**MUI のカスタムテーマを適用するには、必ず `ThemeProvider` でアプリをラップしてください。**
 
 ```typescript
-import { createTheme } from '@brick-lehm/xium-ui';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+// ✅ 推奨: シンプルな使い方
+import { ThemeProvider } from '@brick-lehm/xium-ui';
+import Button from '@mui/material/Button';
 
 function App() {
-  const theme = createTheme();
-
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <YourApp />
+    <ThemeProvider>
+      {/* MUI コンポーネントにカスタムテーマが自動適用されます */}
+      <Button variant="contained">ボタン</Button>
     </ThemeProvider>
   );
 }
 ```
 
-### テーマのカスタマイズ
+### MUI コンポーネントの使用
+
+**重要**: `Button`、`TextField`、`Card` などの MUI 基本コンポーネントは、`@mui/material` から直接インポートします。
 
 ```typescript
-import { createTheme } from '@brick-lehm/xium-ui';
+// ✅ 正しい
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
-const theme = createTheme({
-  themeOverrides: {
+// ❌ 間違い - これらは @brick-lehm/xium-ui に含まれていません
+import { Button } from '@brick-lehm/xium-ui';
+```
+
+`ThemeProvider` でラップすることで、これらの MUI コンポーネントにカスタムテーマが自動的に適用されます。
+
+### カスタムコンポーネントの使用
+
+```typescript
+import { ThemeProvider, Iconify, Label, Chart } from '@brick-lehm/xium-ui';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+
+function App() {
+  return (
+    <ThemeProvider>
+      <Stack spacing={2}>
+        {/* カスタムコンポーネント */}
+        <Iconify icon="solar:home-bold-duotone" width={24} />
+        <Label color="success">成功</Label>
+
+        {/* MUI コンポーネント（カスタムテーマが適用される） */}
+        <Button variant="contained">ボタン</Button>
+      </Stack>
+    </ThemeProvider>
+  );
+}
+```
+
+### テーマのカスタマイズ（上級者向け）
+
+```typescript
+import { createTheme as createMuiTheme } from '@mui/material/styles';
+import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
+import { baseTheme } from '@brick-lehm/xium-ui';
+
+function App() {
+  // baseTheme を拡張
+  const customTheme = createMuiTheme(baseTheme, {
     palette: {
       primary: {
         main: '#your-color',
       },
     },
-  },
-});
+  });
+
+  return (
+    <MuiThemeProvider theme={customTheme}>
+      <YourApp />
+    </MuiThemeProvider>
+  );
+}
 ```
 
 ### ダークモード対応
@@ -124,9 +171,53 @@ function App() {
 
 ### テーマ関連
 
-- `createTheme` - カスタムテーマを作成
+- `ThemeProvider` - テーマプロバイダー（必須）
 - `baseTheme` - ベーステーマオブジェクト
+- `createTheme` - カスタムテーマを作成（内部使用）
 - `themeConfig` - テーマ設定
+
+### カスタムコンポーネント（38個）
+
+#### 基本
+- `Iconify` - アイコン
+- `Label` - ラベル/バッジ
+- `Logo` - ロゴ
+- `Image` - 画像
+- `Scrollbar` - スクロールバー
+- `LoadingScreen` - ローディング
+- `ProgressBar` - プログレスバー
+
+#### データ表示
+- `Chart` - グラフ (ApexCharts)
+- `Carousel` - カルーセル
+- `Lightbox` - ライトボックス
+- `Markdown` - Markdown
+- `Map` - 地図
+- `OrganizationalChart` - 組織図
+- `Table*` - テーブル
+
+#### フォーム
+- `CountrySelect` - 国選択
+- `PhoneInput` - 電話番号
+- `NumberInput` - 数値入力
+- `Upload` - ファイルアップロード
+- `FormProvider`、`RHFTextField`、`RHFSelect` - React Hook Form
+
+#### ナビゲーション
+- `CustomBreadcrumbs` - パンくずリスト
+- `NavBasic*` - 基本ナビゲーション
+- `NavSection*` - セクションナビゲーション
+- `MegaMenu*` - メガメニュー
+
+#### その他
+- `ColorPicker`、`ColorPreview`
+- `FileThumbnail`
+- `FlagIcon`
+- `CustomPopover`
+- `ConfirmDialog`
+- `toast`、`Toaster`
+
+詳細は [USAGE.md](./USAGE.md) を参照してください。
 
 ### コンポーネントスタイル
 
