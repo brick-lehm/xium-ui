@@ -1,6 +1,57 @@
 const fs = require('fs');
 const path = require('path');
 
+// Fix ESM imports to include .mjs extensions
+function fixEsmImports(filePath) {
+  let content = fs.readFileSync(filePath, 'utf8');
+
+  // Replace relative imports without extensions
+  // Match import/export statements with relative paths
+  content = content.replace(
+    /(from\s+['"])(\.[^'"]+)(?<!\.mjs)(?<!\.json)(['"])/g,
+    (match, prefix, importPath, suffix) => {
+      // Don't modify if it already has an extension or is a package import
+      if (importPath.match(/\.(mjs|json)$/)) {
+        return match;
+      }
+
+      // Resolve the full path to check if it's a directory
+      const fileDir = path.dirname(filePath);
+      const resolvedPath = path.resolve(fileDir, importPath);
+
+      // Check if the path is a directory (then it needs /index.mjs)
+      if (fs.existsSync(resolvedPath) && fs.statSync(resolvedPath).isDirectory()) {
+        return `${prefix}${importPath}/index.mjs${suffix}`;
+      }
+
+      return `${prefix}${importPath}.mjs${suffix}`;
+    }
+  );
+
+  // Also fix re-export statements
+  content = content.replace(
+    /(export\s+\*\s+from\s+['"])(\.[^'"]+)(?<!\.mjs)(?<!\.json)(['"])/g,
+    (match, prefix, importPath, suffix) => {
+      if (importPath.match(/\.(mjs|json)$/)) {
+        return match;
+      }
+
+      // Resolve the full path to check if it's a directory
+      const fileDir = path.dirname(filePath);
+      const resolvedPath = path.resolve(fileDir, importPath);
+
+      // Check if the path is a directory (then it needs /index.mjs)
+      if (fs.existsSync(resolvedPath) && fs.statSync(resolvedPath).isDirectory()) {
+        return `${prefix}${importPath}/index.mjs${suffix}`;
+      }
+
+      return `${prefix}${importPath}.mjs${suffix}`;
+    }
+  );
+
+  fs.writeFileSync(filePath, content, 'utf8');
+}
+
 // Move ESM files from dist/esm to dist with .mjs extension
 function moveEsmFiles(srcDir, destDir) {
   if (!fs.existsSync(srcDir)) {
@@ -24,6 +75,9 @@ function moveEsmFiles(srcDir, destDir) {
 
       fs.copyFileSync(srcPath, destPath);
       console.log(`Copied ${file} to ${destPath}`);
+
+      // Fix ESM imports in the copied .mjs file
+      fixEsmImports(destPath);
     }
   });
 
