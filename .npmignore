@@ -1,0 +1,38 @@
+# Source files
+src/
+
+# Components directory (explicitly excluded)
+src/components/
+
+# Development files
+.next/
+.storybook/
+stories/
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Config files
+tsconfig.json
+tsconfig.build.json
+eslint.config.mjs
+.prettierrc
+.prettierignore
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# IDE files
+.vscode/
+.idea/
+
+# Misc
+node_modules/
+*.log
+.DS_Store
