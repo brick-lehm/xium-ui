@@ -1,13 +1,12 @@
-# Source files
+# Source files (exclude all except what's built)
 src/
-
-# Components directory (explicitly excluded)
-src/components/
 
 # Development files
 .next/
 .storybook/
 stories/
+app/
+public/
 
 # Test files
 **/*.test.ts
@@ -21,6 +20,11 @@ tsconfig.build.json
 eslint.config.mjs
 .prettierrc
 .prettierignore
+next.config.ts
+next-env.d.ts
+
+# Scripts
+scripts/
 
 # Environment files
 .env

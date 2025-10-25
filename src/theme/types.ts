@@ -45,6 +45,27 @@ export type ThemeOptions = Omit<MuiThemeOptions, 'components'> &
 // ----------------------------------------------------------------------
 
 /**
+ * Settings state type
+ * Used for theme customization settings
+ */
+export type ThemeColorPreset = 'default' | 'preset1' | 'preset2' | 'preset3' | 'preset4' | 'preset5';
+
+export type SettingsState = {
+  version: string;
+  fontSize: number;
+  fontFamily: string;
+  compactLayout: boolean;
+  contrast: 'default' | 'high';
+  primaryColor: ThemeColorPreset;
+  mode: 'light' | 'dark' | 'system' | undefined;
+  navColor: 'integrate' | 'apparent';
+  direction: 'ltr' | 'rtl';
+  navLayout: 'vertical' | 'horizontal' | 'mini';
+};
+
+// ----------------------------------------------------------------------
+
+/**
  * DeepPartial utility type that recursively makes all properties of T optional.
  * This is useful for partial configurations and merging deeply nested objects.
  * Supports objects, arrays, and primitive types.
