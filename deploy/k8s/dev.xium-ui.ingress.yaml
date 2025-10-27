@@ -1,0 +1,19 @@
+# ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: xium-ui-ingress
+  namespace: xium
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: "xium-ui.dev.local"
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: xium-ui-service
+                port:
+                  number: 80
