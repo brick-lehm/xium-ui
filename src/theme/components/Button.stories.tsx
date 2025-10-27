@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Button from '@mui/material/Button';
+
 import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 const meta: Meta<typeof Button> = {
   title: 'Theme/Components/Button',

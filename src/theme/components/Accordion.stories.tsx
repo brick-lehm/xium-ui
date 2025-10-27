@@ -1,13 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
+import { useState } from 'react';
+
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 import Accordion from '@mui/material/Accordion';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionActions from '@mui/material/AccordionActions';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-import { useState } from 'react';
 
 const meta: Meta<typeof Accordion> = {
   title: 'Theme/Components/Accordion',

@@ -40,3 +40,4 @@ tsconfig.tsbuildinfo
 .npmrc
 deploy/
 .github
+/.github/

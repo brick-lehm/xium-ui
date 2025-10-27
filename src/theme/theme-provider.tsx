@@ -11,8 +11,8 @@ import { useTranslate } from 'src/locales';
 
 import { useSettingsContext } from 'src/components/settings';
 
+import { Rtl } from './with-settings';
 import { createTheme } from './create-theme';
-import { Rtl } from './with-settings/right-to-left';
 
 // ----------------------------------------------------------------------
 
