@@ -1,7 +1,7 @@
 {
   "name": "@brick-lehm/xium-ui",
   "author": "brick-lehm",
-  "version": "2.5.6",
+  "version": "2.6.0",
   "description": "Material-UI custom theme with components - shareable React library",
   "private": false,
   "main": "./dist/index.js",
@@ -59,9 +59,7 @@
     "dev": "next dev -p 8082 --turbopack",
     "start": "next start -p 8082",
     "build": "next build",
-
     "build:lib": "rm -rf dist && tsc -p tsconfig.build.json && tsc -p tsconfig.build.json --module esnext --outDir dist/esm && node scripts/post-build.js",
-
     "prepublishOnly": "npm run build:lib",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
@@ -76,7 +74,6 @@
     "tsc:dev": "yarn dev & yarn tsc:watch",
     "tsc:watch": "tsc --noEmit --watch",
     "tsc:print": "npx tsc --showConfig",
-
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
