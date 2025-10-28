@@ -1,1 +1,1 @@
-export { usePathname } from 'next/navigation.js';
+export { usePathname } from 'next/navigation';

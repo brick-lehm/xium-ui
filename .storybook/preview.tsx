@@ -8,7 +8,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 import { SettingsProvider, defaultSettings } from '../src';
-import { ThemeProvider } from '../src/theme/theme-provider';
+import { StandaloneThemeProvider } from '../src/theme/standalone-theme-provider';
 
 // Mock Next.js router for Storybook
 const mockRouter = {
@@ -66,11 +66,11 @@ const preview: Preview = {
                               defaultSettings={settings}
                               storageKey={`storybook-settings-${mode}`}
             >
-              <ThemeProvider key={mode}
+              <StandaloneThemeProvider key={mode}
                              defaultMode='light'
               >
                 <Story />
-              </ThemeProvider>
+              </StandaloneThemeProvider>
             </SettingsProvider>
           </LocalizationProvider>
         </AppRouterContext.Provider>

@@ -1,1 +1,1 @@
-export { useParams } from 'next/navigation.js';
+export { useParams } from 'next/navigation';

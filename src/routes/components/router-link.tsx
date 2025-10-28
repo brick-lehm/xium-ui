@@ -1,3 +1,3 @@
-import Link from 'next/link';
+import RouterLink from 'next/link';
 
-export { Link as RouterLink };
+export { RouterLink };

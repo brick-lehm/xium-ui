@@ -3,8 +3,9 @@
 import type { Theme, ThemeProviderProps as MuiThemeProviderProps } from '@mui/material/styles';
 
 import { useMemo } from 'react';
+
 import CssBaseline from '@mui/material/CssBaseline';
-import { ThemeProvider as MuiThemeProvider, createTheme as createMuiTheme } from '@mui/material/styles';
+import { createTheme as createMuiTheme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
 
 import { baseTheme } from './create-theme';
 

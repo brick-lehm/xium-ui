@@ -1,7 +1,5 @@
 import type { Editor } from '@tiptap/react';
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore - @tiptap/react/menus requires moduleResolution: bundler
 import { BubbleMenu } from '@tiptap/react/menus';
 
 import Divider from '@mui/material/Divider';

@@ -1,22 +1,7 @@
 import type { InitOptions } from 'i18next';
 import type { Theme, Components } from '@mui/material/styles';
 
-// Import translation resources statically
-import enCommon from './langs/en/common.json';
-import enMessages from './langs/en/messages.json';
-import enNavbar from './langs/en/navbar.json';
-import frCommon from './langs/fr/common.json';
-import frMessages from './langs/fr/messages.json';
-import frNavbar from './langs/fr/navbar.json';
-import viCommon from './langs/vi/common.json';
-import viMessages from './langs/vi/messages.json';
-import viNavbar from './langs/vi/navbar.json';
-import cnCommon from './langs/cn/common.json';
-import cnMessages from './langs/cn/messages.json';
-import cnNavbar from './langs/cn/navbar.json';
-import arCommon from './langs/ar/common.json';
-import arMessages from './langs/ar/messages.json';
-import arNavbar from './langs/ar/navbar.json';
+import resourcesToBackend from 'i18next-resources-to-backend';
 
 // MUI Core Locales
 import {
@@ -129,34 +114,9 @@ export const allLangs: LangOption[] = [
 
 // ----------------------------------------------------------------------
 
-// Static translation resources for framework-free environments
-export const translationResources = {
-  en: {
-    common: enCommon,
-    messages: enMessages,
-    navbar: enNavbar,
-  },
-  fr: {
-    common: frCommon,
-    messages: frMessages,
-    navbar: frNavbar,
-  },
-  vi: {
-    common: viCommon,
-    messages: viMessages,
-    navbar: viNavbar,
-  },
-  cn: {
-    common: cnCommon,
-    messages: cnMessages,
-    navbar: cnNavbar,
-  },
-  ar: {
-    common: arCommon,
-    messages: arMessages,
-    navbar: arNavbar,
-  },
-} as const;
+export const i18nResourceLoader = resourcesToBackend(
+  (lang: LangCode, namespace: string) => import(`./langs/${lang}/${namespace}.json`)
+);
 
 export function i18nOptions(lang = fallbackLng, namespace = defaultNS): InitOptions {
   return {

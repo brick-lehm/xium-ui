@@ -19,13 +19,7 @@ const isStaticExport = false;
 
 const nextConfig: NextConfig = {
   trailingSlash: true,
-  output: isStaticExport ? 'export' : 'standalone',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: isStaticExport ? 'export' : undefined,
   env: {
     BUILD_STATIC_EXPORT: JSON.stringify(isStaticExport),
   },

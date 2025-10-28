@@ -1,1 +1,1 @@
-export { useSearchParams } from 'next/navigation.js';
+export { useSearchParams } from 'next/navigation';
