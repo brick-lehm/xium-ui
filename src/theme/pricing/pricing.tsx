@@ -14,28 +14,18 @@ import { PlanCard } from 'src/theme/pricing/plan-card';
 
 import { fPricing } from './f-pricing';
 import { FloatLine } from '../../sections/home/components/svg-elements';
-import { SectionTitle } from '../../sections/home/components/section-title';
 
 // ----------------------------------------------------------------------
 
 export type PricingProps = BoxProps & {
   planCatalogs: PlanCatalogs;
+  selectPlan?: (plan: Plan) => void;
 };
 
-export function Pricing({ planCatalogs, sx, ...other }: PricingProps) {
+export function Pricing({ planCatalogs, selectPlan, sx, ...other }: PricingProps) {
 
   const tabs = useTabs('Standard');
   const plans: Plan[] = fPricing(planCatalogs);
-
-  const renderDescription = () => (
-    <SectionTitle
-      caption="plans"
-      title="Transparent"
-      txtGradient="pricing"
-      description="Choose from flexible pricing options designed to fit your business needs and budget with no hidden fees."
-      sx={{ mb: 8, textAlign: 'center' }}
-    />
-  );
 
   const renderContentDesktop = () => (
     <Box gridTemplateColumns="repeat(3, 1fr)" sx={{ display: { xs: 'none', md: 'grid' } }}>
@@ -43,6 +33,9 @@ export function Pricing({ planCatalogs, sx, ...other }: PricingProps) {
         <PlanCard
           key={index}
           plan={plan}
+          onClickUsePlan={(usePlan) => {
+            selectPlan?.(usePlan);
+          }}
           sx={(theme) => ({
             ...(plan.planTitle === 'Plus' && {
               [theme.breakpoints.down(1440)]: {
@@ -87,6 +80,7 @@ export function Pricing({ planCatalogs, sx, ...other }: PricingProps) {
             && (
               <PlanCard key={tab.planTitle}
                         plan={tab}
+                        onClickUsePlan={(usePlan) => selectPlan?.(usePlan)}
               />
             )
         )}
@@ -100,9 +94,6 @@ export function Pricing({ planCatalogs, sx, ...other }: PricingProps) {
       sx={[{ py: 10, position: 'relative' }, ...(Array.isArray(sx) ? sx : [sx])]}
       {...other}
     >
-      <FloatLine vertical sx={{ top: 0, left: 80 }} />
-
-      <Container>{renderDescription()}</Container>
 
       <Box
         sx={(theme) => ({

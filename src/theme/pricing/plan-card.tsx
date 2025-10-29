@@ -11,24 +11,13 @@ import Box, { type BoxProps } from '@mui/material/Box';
 import { paths } from '../../routes/paths';
 import { Iconify } from '../../components/iconify';
 import { varFade, varScale } from '../../components/animate';
-import { FloatLine, FloatXIcon } from '../../sections/home/components/svg-elements';
-
-const renderLines = () => (
-  <>
-    <FloatLine vertical sx={{ top: -64, left: 0, height: 'calc(100% + (64px * 2))' }} />
-    <FloatLine vertical sx={{ top: -64, right: 0, height: 'calc(100% + (64px * 2))' }} />
-    <FloatXIcon sx={{ top: -8, left: -8 }} />
-    <FloatXIcon sx={{ top: -8, right: -8 }} />
-    <FloatXIcon sx={{ bottom: -8, left: -8 }} />
-    <FloatXIcon sx={{ bottom: -8, right: -8 }} />
-  </>
-);
 
 export type PlanCardProps = BoxProps & {
   plan: Plan // プラン情報
+  onClickUsePlan?: (plan: Plan) => void
 };
 
-export function PlanCard({ plan, sx, ...other }: PlanCardProps) {
+export function PlanCard({ plan, sx, onClickUsePlan, ...other }: PlanCardProps) {
   const standardLicense = plan.planTitle;
   const {features, options} = plan;
 
@@ -150,15 +139,13 @@ export function PlanCard({ plan, sx, ...other }: PlanCardProps) {
         <m.div variants={varFade('inUp', { distance: 24 })}>
           <Button
             fullWidth
-            // variant={plusLicense ? 'contained' : 'outlined'}
             variant='outlined'
             color="inherit"
             size="large"
-            target="_blank"
-            rel="noopener noreferrer"
-            href={paths.minimalStore}
+            content='button'
+            onClick={() => { onClickUsePlan?.(plan) }}
           >
-            Get started
+            このプランを利用する
           </Button>
         </m.div>
       </Box>
