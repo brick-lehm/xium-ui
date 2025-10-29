@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Box from '@mui/material/Box';
 
 import { Pricing } from './pricing';
-import { plansMock } from './pricing.mock';
+import { CatalogsMock } from './pricing.mock';
 
 const meta: Meta<typeof Pricing> = {
   title: 'Theme/Organism/Pricing',
@@ -34,13 +34,13 @@ type Story = StoryObj<typeof Pricing>;
 
 export const Default: Story = {
   args: {
-    plans: plansMock,
+    planCatalogs: CatalogsMock,
   },
 };
 
 export const Desktop: Story = {
   args: {
-    plans: plansMock,
+    planCatalogs: CatalogsMock,
   },
   parameters: {
     viewport: {
@@ -51,7 +51,7 @@ export const Desktop: Story = {
 
 export const Mobile: Story = {
   args: {
-    plans: plansMock,
+    planCatalogs: CatalogsMock,
   },
   parameters: {
     viewport: {

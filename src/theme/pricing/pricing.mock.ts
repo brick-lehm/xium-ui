@@ -1,33 +1,43 @@
-import type { Plan, Plans } from './pricing.type';
+import type { PlanCatalogs } from './pricing.type';
 
 import { CONFIG } from '../../global-config';
 
-export const plansMock: Plans = {
-  common: [
-    'Basic Analytics', '100 GB Storage', 'Basic Support'
-  ],
-  options: [
-    'Custom Domain', 'SSL Certificate', 'Daily Backups',
-    'SEO Tools', 'Marketing Integrations',
-    'All Features', 'Unlimited Storage', '24/7 Dedicated Support'
-  ],
+export const CatalogsMock: PlanCatalogs = {
+
   plans: [
     {
+      planId: 'standard',
       planTitle: 'Standard',
       price: 69,
-      allowOptions: [
-        'Custom Domain', 'SSL Certificate', 'Daily Backups',
+      features: [
+        '30ユーザー数',
+        '5プロジェクト',
+        'ストレージ（容量）： 1GB',
+        'コミュニティサポート',
+      ],
+      options: [
+        'カンバンボード',
+        'ファイル共有',
       ],
       icons: [
         `${CONFIG.assetsDir}/assets/icons/platforms/ic-js.svg`,
-      ],
+      ]
     },
     {
+      planId: 'plus',
       planTitle: 'Plus',
       price: 129,
-      allowOptions: [
-        'Custom Domain', 'SSL Certificate', 'Daily Backups',
-        'SEO Tools', 'Marketing Integrations',
+      features: [
+        '30ユーザー数',
+        '5プロジェクト',
+        'ストレージ（容量）： 1GB',
+        'コミュニティサポート',
+      ],
+      options: [
+        'カンバンボード',
+        'ファイル共有',
+        'バーンダウンチャート',
+        '親子課題'
       ],
       icons: [
         `${CONFIG.assetsDir}/assets/icons/platforms/ic-js.svg`,
@@ -35,12 +45,21 @@ export const plansMock: Plans = {
       ]
     },
     {
+      planId: 'pro',
       planTitle: 'Pro',
       price: 599,
-      allowOptions: [
-        'Custom Domain', 'SSL Certificate', 'Daily Backups',
-        'SEO Tools', 'Marketing Integrations',
-        'All Features', 'Unlimited Storage', '24/7 Dedicated Support'
+      features: [
+        '30ユーザー数',
+        '5プロジェクト',
+        'ストレージ（容量）： 1GB',
+        'コミュニティサポート',
+      ],
+      options: [
+        'カンバンボード',
+        'ファイル共有',
+        'バーンダウンチャート',
+        '親子課題',
+        'モバイルアプリ',
       ],
       icons: [
         `${CONFIG.assetsDir}/assets/icons/platforms/ic-js.svg`,
@@ -48,6 +67,5 @@ export const plansMock: Plans = {
         `${CONFIG.assetsDir}/assets/icons/platforms/ic-figma.svg`,
       ],
     },
-  ]
+  ],
 };
-

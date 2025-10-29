@@ -45,9 +45,9 @@ RUN addgroup --system --gid 1001 nodejs \
     && adduser --system --uid 1001 nextjs
 
 # Copy Next.js standalone build
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next ./
+#COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+#COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 
 # Copy Storybook build to nginx html directory
 COPY --from=builder /app/storybook-static /usr/share/nginx/html/storybook

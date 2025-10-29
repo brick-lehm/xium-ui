@@ -26,13 +26,11 @@ const renderLines = () => (
 
 export type PlanCardProps = BoxProps & {
   plan: Plan // プラン情報
-  common: string[], // 共通のオプション項目
-  options: string[], // 全てのオプション項目
 };
 
-export function PlanCard({ plan, common, options, sx, ...other }: PlanCardProps) {
+export function PlanCard({ plan, sx, ...other }: PlanCardProps) {
   const standardLicense = plan.planTitle;
-  const {allowOptions} = plan;
+  const {features, options} = plan;
 
   return (
     <Box
@@ -106,9 +104,9 @@ export function PlanCard({ plan, common, options, sx, ...other }: PlanCardProps)
         </Box>
 
         <Stack spacing={2.5}>
-          {common.map((option) => (
+          {features.map((feature) => (
             <Box
-              key={option}
+              key={feature}
               component={m.div}
               variants={varFade('in')}
               sx={{
@@ -119,7 +117,7 @@ export function PlanCard({ plan, common, options, sx, ...other }: PlanCardProps)
               }}
             >
               <Iconify width={16} icon="eva:checkmark-fill" />
-              {option}
+              {feature}
             </Box>
           ))}
 
@@ -127,10 +125,7 @@ export function PlanCard({ plan, common, options, sx, ...other }: PlanCardProps)
             <Divider sx={{ borderStyle: 'dashed' }} />
           </m.div>
 
-          {options.map((option, index) => {
-            const disabled = !allowOptions.includes(option);
-
-            return (
+          {options.map((option, index) => (
               <Box
                 key={index}
                 component={m.div}
@@ -140,17 +135,16 @@ export function PlanCard({ plan, common, options, sx, ...other }: PlanCardProps)
                   display: 'flex',
                   typography: 'body2',
                   alignItems: 'center',
-                  ...(disabled && { color: 'text.disabled', textDecoration: 'line-through' }),
+                  ...(!option.available && { color: 'text.disabled', textDecoration: 'line-through' }),
                 }}
               >
                 <Iconify
                   width={18}
-                  icon={disabled ? 'mingcute:close-line' : 'eva:checkmark-fill'}
+                  icon={!option.available ? 'mingcute:close-line' : 'eva:checkmark-fill'}
                 />
-                {option}
+                {option.optionName}
               </Box>
-            );
-          })}
+            ))}
         </Stack>
 
         <m.div variants={varFade('inUp', { distance: 24 })}>

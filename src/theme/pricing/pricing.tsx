@@ -1,5 +1,5 @@
 import type { BoxProps } from '@mui/material/Box';
-import type { Plans } from './pricing.type';
+import type { Plan, PlanCatalogs} from './pricing.type';
 
 import { useTabs } from 'minimal-shared/hooks';
 import { varAlpha } from 'minimal-shared/utils';
@@ -12,17 +12,20 @@ import Container from '@mui/material/Container';
 
 import { PlanCard } from 'src/theme/pricing/plan-card';
 
+import { fPricing } from './f-pricing';
 import { FloatLine } from '../../sections/home/components/svg-elements';
 import { SectionTitle } from '../../sections/home/components/section-title';
 
 // ----------------------------------------------------------------------
 
 export type PricingProps = BoxProps & {
-  plans: Plans;
+  planCatalogs: PlanCatalogs;
 };
 
-export function Pricing({ plans, sx, ...other }: PricingProps) {
+export function Pricing({ planCatalogs, sx, ...other }: PricingProps) {
+
   const tabs = useTabs('Standard');
+  const plans: Plan[] = fPricing(planCatalogs);
 
   const renderDescription = () => (
     <SectionTitle
@@ -36,12 +39,10 @@ export function Pricing({ plans, sx, ...other }: PricingProps) {
 
   const renderContentDesktop = () => (
     <Box gridTemplateColumns="repeat(3, 1fr)" sx={{ display: { xs: 'none', md: 'grid' } }}>
-      {(plans.plans).map((plan, index) => (
+      {(plans).map((plan, index) => (
         <PlanCard
           key={index}
           plan={plan}
-          common={plans.common}
-          options={plans.options}
           sx={(theme) => ({
             ...(plan.planTitle === 'Plus' && {
               [theme.breakpoints.down(1440)]: {
@@ -66,7 +67,7 @@ export function Pricing({ plans, sx, ...other }: PricingProps) {
           }),
         ]}
       >
-        {(plans.plans).map((tab) => (
+        {(planCatalogs.plans).map((tab) => (
           <Tab key={tab.planTitle} value={tab.planTitle} label={tab.planTitle} />
         ))}
       </Tabs>
@@ -81,13 +82,11 @@ export function Pricing({ plans, sx, ...other }: PricingProps) {
         ]}
       >
         {/* プランカードの表示 */}
-        {(plans.plans).map(
+        {(plans).map(
           (tab) => tab.planTitle === tabs.value
             && (
               <PlanCard key={tab.planTitle}
                         plan={tab}
-                        common={plans.common}
-                        options={plans.options}
               />
             )
         )}
