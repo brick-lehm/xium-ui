@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Skeleton from '@mui/material/Skeleton';
-import Stack from '@mui/material/Stack';
+
 import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
+import Skeleton from '@mui/material/Skeleton';
 
 const meta: Meta<typeof Skeleton> = {
   title: 'Theme/Components/Skeleton',

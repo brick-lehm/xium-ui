@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
+import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
 
 const meta: Meta<typeof Paper> = {
   title: 'Theme/Components/Paper',

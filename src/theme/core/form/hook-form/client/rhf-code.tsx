@@ -1,26 +1,37 @@
 import type { BoxProps } from '@mui/material/Box';
-import type { RatingProps } from '@mui/material/Rating';
+import type { MuiOtpInputProps } from 'mui-one-time-password-input';
 import type { FormHelperTextProps } from '@mui/material/FormHelperText';
 
+import { MuiOtpInput } from 'mui-one-time-password-input';
 import { Controller, useFormContext } from 'react-hook-form';
 
 import Box from '@mui/material/Box';
-import Rating from '@mui/material/Rating';
+import { inputBaseClasses } from '@mui/material/InputBase';
 
-import { HelperText } from './help-text';
+import { HelperText } from '../server/help-text';
 
 // ----------------------------------------------------------------------
 
-export type RHFRatingProps = RatingProps & {
+export interface RHFCodesProps extends Omit<MuiOtpInputProps, 'sx'> {
   name: string;
+  maxSize?: number;
+  placeholder?: string;
   helperText?: React.ReactNode;
   slotProps?: {
     wrapper?: BoxProps;
     helperText?: FormHelperTextProps;
+    textField?: MuiOtpInputProps['TextFieldsProps'];
   };
-};
+}
 
-export function RHFRating({ name, helperText, slotProps, ...other }: RHFRatingProps) {
+export function RHFCode({
+  name,
+  slotProps,
+  helperText,
+  maxSize = 56,
+  placeholder = '-',
+  ...other
+}: RHFCodesProps) {
   const { control } = useFormContext();
 
   return (
@@ -31,21 +42,34 @@ export function RHFRating({ name, helperText, slotProps, ...other }: RHFRatingPr
         <Box
           {...slotProps?.wrapper}
           sx={[
-            { display: 'flex', flexDirection: 'column' },
+            {
+              [`& .${inputBaseClasses.input}`]: {
+                p: 0,
+                height: 'auto',
+                aspectRatio: '1/1',
+                maxWidth: maxSize,
+              },
+            },
             ...(Array.isArray(slotProps?.wrapper?.sx)
               ? slotProps.wrapper.sx
               : [slotProps?.wrapper?.sx]),
           ]}
         >
-          <Rating
+          <MuiOtpInput
             {...field}
-            onChange={(event, newValue) => field.onChange(Number(newValue))}
+            autoFocus
+            gap={1.5}
+            length={6}
+            TextFieldsProps={{
+              placeholder,
+              error: !!error,
+              ...slotProps?.textField,
+            }}
             {...other}
           />
 
           <HelperText
             {...slotProps?.helperText}
-            disableGutters
             errorMessage={error?.message}
             helperText={helperText}
           />

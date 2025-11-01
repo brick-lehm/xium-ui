@@ -16,9 +16,9 @@ import { paths } from 'src/routes/paths';
 import { useRouter } from 'src/routes/hooks';
 
 import { NewPasswordIcon } from 'src/assets/icons';
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
 
 import { Iconify } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
 
 import { getErrorMessage } from '../../utils';
 import { FormHead } from '../../components/form-head';

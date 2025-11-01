@@ -18,7 +18,7 @@ import TextField from '@mui/material/TextField';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 
-import { HelperText } from './help-text';
+import { HelperText } from '../server/help-text';
 
 // ----------------------------------------------------------------------
 

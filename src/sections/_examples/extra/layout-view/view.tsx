@@ -15,8 +15,8 @@ import { MainLayout } from 'src/layouts/main';
 import { layoutClasses } from 'src/layouts/core';
 import { SimpleLayout } from 'src/layouts/simple';
 import { DashboardLayout } from 'src/layouts/dashboard';
-import { AuthSplitLayout } from 'src/layouts/auth-split';
 import { AuthCenteredLayout } from 'src/layouts/auth-centered';
+import { AuthSplitLayout } from "src/theme/page/auth/jwt/layout/auth-split";
 
 import { ComponentLayout } from '../../layout';
 

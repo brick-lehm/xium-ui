@@ -1,5 +1,6 @@
 export * from './core';
 export * from './pricing';
+export * from './page/auth';
 export * from './theme-config';
 export * from './core/notifier';
 export * from './theme-provider';

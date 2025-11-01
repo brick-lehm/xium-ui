@@ -3,7 +3,7 @@ import { isValidPhoneNumber } from 'react-phone-number-input/input';
 
 import { fIsAfter } from 'src/utils/format-time';
 
-import { schemaUtils } from 'src/components/hook-form';
+import { schemaUtils } from 'src/theme/core/form/hook-form/server';
 
 // ----------------------------------------------------------------------
 

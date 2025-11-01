@@ -15,12 +15,12 @@ import DialogActions from '@mui/material/DialogActions';
 
 import { fIsAfter } from 'src/utils/format-time';
 
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
 import { createEvent, updateEvent, deleteEvent } from 'src/actions/calendar';
 
 import { toast } from 'src/components/snackbar';
 import { Iconify } from 'src/components/iconify';
 import { Scrollbar } from 'src/components/scrollbar';
-import { Form, Field } from 'src/components/hook-form';
 import { ColorPicker } from 'src/components/color-utils';
 
 // ----------------------------------------------------------------------

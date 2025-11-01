@@ -1,4 +1,4 @@
-import { AuthSplitLayout } from 'src/layouts/auth-split';
+import { AuthSplitLayout } from "src/theme/page/auth/jwt/layout/auth-split";
 
 // ----------------------------------------------------------------------
 

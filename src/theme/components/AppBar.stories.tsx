@@ -1,19 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
-import SearchIcon from '@mui/icons-material/Search';
-import InputBase from '@mui/material/InputBase';
-import { alpha, styled } from '@mui/material/styles';
+
 import { useState } from 'react';
+
+import Box from '@mui/material/Box';
+import Menu from '@mui/material/Menu';
+import Stack from '@mui/material/Stack';
+import AppBar from '@mui/material/AppBar';
+import Button from '@mui/material/Button';
+import Toolbar from '@mui/material/Toolbar';
+import MenuItem from '@mui/material/MenuItem';
+import MenuIcon from '@mui/icons-material/Menu';
+import InputBase from '@mui/material/InputBase';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+import SearchIcon from '@mui/icons-material/Search';
+import { alpha, styled } from '@mui/material/styles';
+import AccountCircle from '@mui/icons-material/AccountCircle';
 
 const meta: Meta<typeof AppBar> = {
   title: 'Theme/Components/AppBar',

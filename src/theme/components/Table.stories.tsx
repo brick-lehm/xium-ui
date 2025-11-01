@@ -1,16 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
+import { useState } from 'react';
+
 import Table from '@mui/material/Table';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import TableRow from '@mui/material/TableRow';
+import Checkbox from '@mui/material/Checkbox';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import TablePagination from '@mui/material/TablePagination';
+import TableContainer from '@mui/material/TableContainer';
 import TableSortLabel from '@mui/material/TableSortLabel';
-import Paper from '@mui/material/Paper';
-import Checkbox from '@mui/material/Checkbox';
-import Stack from '@mui/material/Stack';
-import { useState } from 'react';
+import TablePagination from '@mui/material/TablePagination';
 
 const meta: Meta<typeof Table> = {
   title: 'Theme/Components/Table',
@@ -40,9 +42,7 @@ const createData = (
   fat: number,
   carbs: number,
   protein: number,
-): Data => {
-  return { id, name, calories, fat, carbs, protein };
-};
+): Data => ({ id, name, calories, fat, carbs, protein });
 
 const rows = [
   createData(1, 'Frozen yoghurt', 159, 6.0, 24, 4.0),

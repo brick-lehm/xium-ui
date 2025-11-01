@@ -15,7 +15,7 @@ import FormLabel from '@mui/material/FormLabel';
 import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
-import { HelperText } from './help-text';
+import { HelperText } from '../server/help-text';
 
 // ----------------------------------------------------------------------
 

@@ -25,11 +25,12 @@ import { useRouter } from 'src/routes/hooks';
 
 import { fIsAfter } from 'src/utils/format-time';
 
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
+import { schemaUtils } from 'src/theme/core/form/hook-form/server';
 import { _tags, _tourGuides, TOUR_SERVICE_OPTIONS } from 'src/_mock';
 
 import { toast } from 'src/components/snackbar';
 import { Iconify } from 'src/components/iconify';
-import { Form, Field, schemaUtils } from 'src/components/hook-form';
 
 // ----------------------------------------------------------------------
 

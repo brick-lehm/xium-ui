@@ -14,8 +14,8 @@ import InputAdornment from '@mui/material/InputAdornment';
 import { inputBaseClasses } from '@mui/material/InputBase';
 
 import { INVOICE_SERVICE_OPTIONS } from 'src/_mock';
+import { Field } from 'src/theme/core/form/hook-form/client';
 
-import { Field } from 'src/components/hook-form';
 import { Iconify } from 'src/components/iconify';
 
 import { InvoiceTotalSummary } from './invoice-total-summary';

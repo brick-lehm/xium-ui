@@ -7,7 +7,7 @@ import { mergeClasses } from 'minimal-shared/utils';
 
 import Box from '@mui/material/Box';
 
-import { layoutClasses } from '../core';
+import { layoutClasses } from '../../../../../layouts/core';
 
 // ----------------------------------------------------------------------
 

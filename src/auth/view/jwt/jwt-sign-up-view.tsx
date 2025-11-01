@@ -2,28 +2,30 @@
 
 import * as z from 'zod';
 import { useState } from 'react';
+import RouterLink from 'next/link';
 import { useForm } from 'react-hook-form';
 import { useBoolean } from 'minimal-shared/hooks';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+import { Link } from '@mui/material';
 import Alert from '@mui/material/Alert';
-import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 
-import { paths } from 'src/routes/paths';
 import { useRouter } from 'src/routes/hooks';
-import { RouterLink } from 'src/routes/components';
+
+import { SignUpForm , schemaUtils } from 'src/theme';
+import { Field } from 'src/theme/core/form/hook-form/client';
 
 import { Iconify } from 'src/components/iconify';
-import { Form, Field, schemaUtils } from 'src/components/hook-form';
+
+import { FormHead } from 'src/auth/components/form-head';
 
 import { signUp } from '../../context/jwt';
 import { useAuthContext } from '../../hooks';
 import { getErrorMessage } from '../../utils';
-import { FormHead } from '../../components/form-head';
+import { paths } from '../../../routes/paths';
 import { SignUpTerms } from '../../components/sign-up-terms';
 
 // ----------------------------------------------------------------------
@@ -123,47 +125,43 @@ export function JwtSignUpView() {
           },
         }}
       />
-
-      <Button
-        fullWidth
-        color="inherit"
-        size="large"
-        type="submit"
-        variant="contained"
-        loading={isSubmitting}
-        loadingIndicator="Create account..."
-      >
-        Create account
-      </Button>
     </Box>
   );
 
   return (
-    <>
-      <FormHead
-        title="Get started absolutely free"
-        description={
-          <>
-            {`Already have an account? `}
-            <Link component={RouterLink} href={paths.auth.jwt.signIn} variant="subtitle2">
-              Get started
-            </Link>
-          </>
-        }
-        sx={{ textAlign: { xs: 'center', md: 'left' } }}
+    <SignUpForm defaultValues={defaultValues}
+                signUpSchema={SignUpSchema}
+                header={
+                  (
+                    <>
+                      <FormHead
+                        title="Get started absolutely free"
+                        description={
+                          <>
+                            {`Already have an account? `}
+                            <Link component={RouterLink}
+                                  href={paths.auth.jwt.signIn}
+                                  variant="subtitle2"
+                            >
+                              Get started
+                            </Link>
+                          </>
+                        }
+                        sx={{ textAlign: { xs: 'center', md: 'left' } }}
+                      />
+
+                      {!!errorMessage && (
+                        <Alert severity="error" sx={{ mb: 3 }}>
+                          {errorMessage}
+                        </Alert>
+                      )}
+                    </>
+
+                  )
+                }
+                form={renderForm()}
+                signupTerms={(<SignUpTerms />)}
+                signUpSubmitAction={onSubmit}
       />
-
-      {!!errorMessage && (
-        <Alert severity="error" sx={{ mb: 3 }}>
-          {errorMessage}
-        </Alert>
-      )}
-
-      <Form methods={methods} onSubmit={onSubmit}>
-        {renderForm()}
-      </Form>
-
-      <SignUpTerms />
-    </>
   );
 }

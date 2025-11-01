@@ -10,8 +10,9 @@ import Button from '@mui/material/Button';
 import ListItemText from '@mui/material/ListItemText';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
+import { Form } from 'src/theme/core/form/hook-form/client';
+
 import { toast } from 'src/components/snackbar';
-import { Form } from 'src/components/hook-form';
 
 // ----------------------------------------------------------------------
 

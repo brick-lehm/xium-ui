@@ -10,8 +10,8 @@ import Button from '@mui/material/Button';
 import { paths } from 'src/routes/paths';
 
 import { EmailInboxIcon } from 'src/assets/icons';
-
-import { Form, Field, schemaUtils } from 'src/components/hook-form';
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
+import { schemaUtils } from 'src/theme/core/form/hook-form/server';
 
 import { FormHead } from '../../../components/form-head';
 import { FormReturnLink } from '../../../components/form-return-link';

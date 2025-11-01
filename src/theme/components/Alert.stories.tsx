@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 import Alert from '@mui/material/Alert';
-import AlertTitle from '@mui/material/AlertTitle';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import AlertTitle from '@mui/material/AlertTitle';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 const meta: Meta<typeof Alert> = {

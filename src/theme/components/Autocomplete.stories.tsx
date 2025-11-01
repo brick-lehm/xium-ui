@@ -1,8 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Autocomplete from '@mui/material/Autocomplete';
-import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
+
 import { useState } from 'react';
+
+import Stack from '@mui/material/Stack';
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
 
 const meta: Meta<typeof Autocomplete> = {
   title: 'Theme/Components/Autocomplete',

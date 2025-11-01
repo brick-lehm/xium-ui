@@ -11,8 +11,8 @@ import { paths } from 'src/routes/paths';
 import { useRouter } from 'src/routes/hooks';
 
 import { PasswordIcon } from 'src/assets/icons';
-
-import { Form, Field, schemaUtils } from 'src/components/hook-form';
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
+import { schemaUtils } from 'src/theme/core/form/hook-form/server';
 
 import { FormHead } from '../../components/form-head';
 import { resetPassword } from '../../context/supabase';

@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 import Badge from '@mui/material/Badge';
 import Stack from '@mui/material/Stack';
 import MailIcon from '@mui/icons-material/Mail';
@@ -151,7 +152,7 @@ export const Visibility: Story = {
       <Badge variant="dot" invisible={false} color="primary">
         <MailIcon />
       </Badge>
-      <Badge variant="dot" invisible={true} color="primary">
+      <Badge variant="dot" invisible color="primary">
         <MailIcon />
       </Badge>
     </Stack>

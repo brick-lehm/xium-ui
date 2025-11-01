@@ -1,10 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Slider from '@mui/material/Slider';
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-import VolumeDown from '@mui/icons-material/VolumeDown';
-import VolumeUp from '@mui/icons-material/VolumeUp';
+
 import { useState } from 'react';
+
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Slider from '@mui/material/Slider';
+import VolumeUp from '@mui/icons-material/VolumeUp';
+import VolumeDown from '@mui/icons-material/VolumeDown';
 
 const meta: Meta<typeof Slider> = {
   title: 'Theme/Components/Slider',

@@ -7,7 +7,8 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 
-import { Form, schemaUtils } from 'src/components/hook-form';
+import { Form } from 'src/theme/core/form/hook-form/client';
+import { schemaUtils } from 'src/theme/core/form/hook-form/server';
 
 import { Stepper, StepOne, StepTwo, StepThree, StepCompleted } from './form-steps';
 

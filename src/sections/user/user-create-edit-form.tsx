@@ -19,9 +19,11 @@ import { useRouter } from 'src/routes/hooks';
 
 import { fData } from 'src/utils/format-number';
 
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
+import { schemaUtils } from 'src/theme/core/form/hook-form/server';
+
 import { Label } from 'src/components/label';
 import { toast } from 'src/components/snackbar';
-import { Form, Field, schemaUtils } from 'src/components/hook-form';
 
 // ----------------------------------------------------------------------
 

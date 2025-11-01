@@ -1,12 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Tabs from '@mui/material/Tabs';
+
+import { useState } from 'react';
+
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import Tabs from '@mui/material/Tabs';
 import Stack from '@mui/material/Stack';
 import PhoneIcon from '@mui/icons-material/Phone';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
-import { useState } from 'react';
 
 const meta: Meta<typeof Tabs> = {
   title: 'Theme/Components/Tabs',

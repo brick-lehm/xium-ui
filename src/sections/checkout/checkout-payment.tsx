@@ -11,7 +11,8 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
-import { Form } from 'src/components/hook-form';
+import { Form } from 'src/theme/core/form/hook-form/client';
+
 import { Iconify } from 'src/components/iconify';
 
 import { useCheckoutContext } from './context';

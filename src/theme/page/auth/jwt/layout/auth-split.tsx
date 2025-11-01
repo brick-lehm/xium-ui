@@ -1,9 +1,9 @@
 'use client';
 
 import type { Breakpoint } from '@mui/material/styles';
-import type { AuthSplitSectionProps } from './section';
-import type { AuthSplitContentProps } from './content';
-import type { MainSectionProps, HeaderSectionProps, LayoutSectionProps } from '../core';
+import type { AuthSplitSectionProps } from './auth-section';
+import type { AuthSplitContentProps } from './auth-content';
+import type { MainSectionProps, HeaderSectionProps, LayoutSectionProps } from '../../../../../layouts/core';
 
 import { merge } from 'es-toolkit';
 
@@ -18,10 +18,10 @@ import { CONFIG } from 'src/global-config';
 
 import { Logo } from 'src/components/logo';
 
-import { AuthSplitSection } from './section';
-import { AuthSplitContent } from './content';
-import { SettingsButton } from '../components/settings-button';
-import { MainSection, LayoutSection, HeaderSection } from '../core';
+import { AuthSplitSection } from './auth-section';
+import { AuthSplitContent } from './auth-content';
+import { SettingsButton } from '../../../../../layouts/components/settings-button';
+import { MainSection, LayoutSection, HeaderSection } from '../../../../../layouts/core';
 
 // ----------------------------------------------------------------------
 

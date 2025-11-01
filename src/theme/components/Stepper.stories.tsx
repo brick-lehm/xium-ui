@@ -1,18 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import StepContent from '@mui/material/StepContent';
-import Button from '@mui/material/Button';
+
+import { useState } from 'react';
+
 import Box from '@mui/material/Box';
+import Step from '@mui/material/Step';
 import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
+import Button from '@mui/material/Button';
+import Stepper from '@mui/material/Stepper';
+import StepIcon from '@mui/material/StepIcon';
+import StepLabel from '@mui/material/StepLabel';
+import Typography from '@mui/material/Typography';
+import StepContent from '@mui/material/StepContent';
 import SettingsIcon from '@mui/icons-material/Settings';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import VideoLabelIcon from '@mui/icons-material/VideoLabel';
-import StepIcon from '@mui/material/StepIcon';
-import { useState } from 'react';
 
 const meta: Meta<typeof Stepper> = {
   title: 'Theme/Components/Stepper',
@@ -169,13 +171,9 @@ export const WithOptionalSteps: Story = {
     const [activeStep, setActiveStep] = useState(0);
     const [skipped, setSkipped] = useState(new Set<number>());
 
-    const isStepOptional = (step: number) => {
-      return step === 1;
-    };
+    const isStepOptional = (step: number) => step === 1;
 
-    const isStepSkipped = (step: number) => {
-      return skipped.has(step);
-    };
+    const isStepSkipped = (step: number) => skipped.has(step);
 
     const handleNext = () => {
       let newSkipped = skipped;
@@ -292,21 +290,13 @@ export const NonLinear: Story = {
     const [activeStep, setActiveStep] = useState(0);
     const [completed, setCompleted] = useState<{ [k: number]: boolean }>({});
 
-    const totalSteps = () => {
-      return steps.length;
-    };
+    const totalSteps = () => steps.length;
 
-    const completedSteps = () => {
-      return Object.keys(completed).length;
-    };
+    const completedSteps = () => Object.keys(completed).length;
 
-    const isLastStep = () => {
-      return activeStep === totalSteps() - 1;
-    };
+    const isLastStep = () => activeStep === totalSteps() - 1;
 
-    const allStepsCompleted = () => {
-      return completedSteps() === totalSteps();
-    };
+    const allStepsCompleted = () => completedSteps() === totalSteps();
 
     const handleNext = () => {
       const newActiveStep =

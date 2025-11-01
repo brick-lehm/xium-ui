@@ -1,11 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
+import { useState } from 'react';
+
+import Stack from '@mui/material/Stack';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
-import Stack from '@mui/material/Stack';
+import FormControl from '@mui/material/FormControl';
 import FormHelperText from '@mui/material/FormHelperText';
-import { useState } from 'react';
 
 const meta: Meta<typeof Select> = {
   title: 'Theme/Components/Select',

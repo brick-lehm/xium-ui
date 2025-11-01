@@ -1,15 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import Stack from '@mui/material/Stack';
-import FormatBoldIcon from '@mui/icons-material/FormatBold';
-import FormatItalicIcon from '@mui/icons-material/FormatItalic';
-import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
-import FormatAlignLeftIcon from '@mui/icons-material/FormatAlignLeft';
-import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter';
-import FormatAlignRightIcon from '@mui/icons-material/FormatAlignRight';
-import FormatAlignJustifyIcon from '@mui/icons-material/FormatAlignJustify';
+
 import { useState } from 'react';
+
+import Stack from '@mui/material/Stack';
+import ToggleButton from '@mui/material/ToggleButton';
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import FormatAlignLeftIcon from '@mui/icons-material/FormatAlignLeft';
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
+import FormatAlignRightIcon from '@mui/icons-material/FormatAlignRight';
+import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter';
+import FormatAlignJustifyIcon from '@mui/icons-material/FormatAlignJustify';
 
 const meta: Meta<typeof ToggleButton> = {
   title: 'Theme/Components/ToggleButton',

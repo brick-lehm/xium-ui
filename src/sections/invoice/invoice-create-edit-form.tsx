@@ -15,8 +15,8 @@ import { useRouter } from 'src/routes/hooks';
 import { today, fIsAfter } from 'src/utils/format-time';
 
 import { _addressBooks } from 'src/_mock';
-
-import { Form, schemaUtils } from 'src/components/hook-form';
+import { Form } from 'src/theme/core/form/hook-form/client';
+import { schemaUtils } from 'src/theme/core/form/hook-form/server';
 
 import { InvoiceCreateEditAddress } from './invoice-create-edit-address';
 import { InvoiceCreateEditStatusDate } from './invoice-create-edit-status-date';

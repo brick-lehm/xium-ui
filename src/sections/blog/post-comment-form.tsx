@@ -6,8 +6,9 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
+
 import { Iconify } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
 
 // ----------------------------------------------------------------------
 

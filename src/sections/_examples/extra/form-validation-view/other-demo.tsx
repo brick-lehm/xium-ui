@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
 
-import { Form, Field } from 'src/components/hook-form';
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
 
 import { OtherSchema } from './schema';
 import { ComponentBox } from '../../layout';

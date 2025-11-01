@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Switch from '@mui/material/Switch';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormGroup from '@mui/material/FormGroup';
+
 import Stack from '@mui/material/Stack';
+import Switch from '@mui/material/Switch';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 const meta: Meta<typeof Switch> = {
   title: 'Theme/Components/Switch',

@@ -6,9 +6,10 @@ import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import InputAdornment from '@mui/material/InputAdornment';
 
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
+
 import { toast } from 'src/components/snackbar';
 import { Iconify } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
 
 // ----------------------------------------------------------------------
 

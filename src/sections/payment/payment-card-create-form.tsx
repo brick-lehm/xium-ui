@@ -8,7 +8,8 @@ import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 
-import { Field } from 'src/components/hook-form';
+import { Field } from 'src/theme/core/form/hook-form/client';
+
 import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------

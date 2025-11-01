@@ -1,11 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Rating from '@mui/material/Rating';
-import Stack from '@mui/material/Stack';
+
+import { useState } from 'react';
+
 import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { useState } from 'react';
 
 const meta: Meta<typeof Rating> = {
   title: 'Theme/Components/Rating',

@@ -14,8 +14,9 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 import { today } from 'src/utils/format-time';
 
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
+
 import { Iconify } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
 
 import { FieldsSchema } from './schema';
 import { ComponentBox } from '../../layout';

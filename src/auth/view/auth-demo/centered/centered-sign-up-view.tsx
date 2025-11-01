@@ -14,10 +14,12 @@ import InputAdornment from '@mui/material/InputAdornment';
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
 
+import { Form, Field } from 'src/theme/core/form/hook-form/client';
+
 import { Iconify } from 'src/components/iconify';
 import { AnimateLogoRotate } from 'src/components/animate';
-import { Form, Field, schemaUtils } from 'src/components/hook-form';
 
+import { schemaUtils } from '../../../../theme';
 import { FormHead } from '../../../components/form-head';
 import { FormSocials } from '../../../components/form-socials';
 import { FormDivider } from '../../../components/form-divider';

@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import TextField from '@mui/material/TextField';
+
 import Stack from '@mui/material/Stack';
+import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
-import IconButton from '@mui/material/IconButton';
 
 const meta: Meta<typeof TextField> = {
   title: 'Theme/Components/TextField',

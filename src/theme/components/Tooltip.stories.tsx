@@ -1,10 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Tooltip from '@mui/material/Tooltip';
+
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
 
 const meta: Meta<typeof Tooltip> = {
   title: 'Theme/Components/Tooltip',
