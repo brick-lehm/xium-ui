@@ -26,7 +26,7 @@ import { Markdown } from 'src/components/markdown';
 import { Scrollbar } from 'src/components/scrollbar';
 import { EmptyContent } from 'src/components/empty-content';
 import { FileThumbnail } from 'src/components/file-thumbnail';
-import { LoadingScreen } from 'src/components/loading-screen';
+import { LoadingScreen } from 'src/theme/core/loading';
 
 // ----------------------------------------------------------------------
 

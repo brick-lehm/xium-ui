@@ -1,3 +1,5 @@
+'use client';
+
 import type { BoxProps } from '@mui/material/Box';
 import type { Plan, PlanCatalogs} from './pricing.type';
 

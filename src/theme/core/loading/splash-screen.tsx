@@ -1,14 +1,14 @@
 'use client';
 
 import type { Theme, SxProps } from '@mui/material/styles';
-import type { AnimateLogoProps } from '../animate';
+import type { AnimateLogoProps } from '../../../components/animate';
 
 import { Fragment } from 'react';
 
 import Portal from '@mui/material/Portal';
 import { styled } from '@mui/material/styles';
 
-import { AnimateLogoZoom } from '../animate';
+import { AnimateLogoZoom } from '../../../components/animate';
 
 // ----------------------------------------------------------------------
 

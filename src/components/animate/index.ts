@@ -1,5 +1,7 @@
 export * from './variants';
 
+export * from './motion-lazy';
+
 export * from './animate-text';
 
 export * from './animate-logo';

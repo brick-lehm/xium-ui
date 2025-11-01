@@ -11,7 +11,7 @@ import { useMemo, useState, Suspense, useEffect, useCallback } from 'react';
 import { paths } from 'src/routes/paths';
 import { useRouter, usePathname, useSearchParams } from 'src/routes/hooks';
 
-import { SplashScreen } from 'src/components/loading-screen';
+import { SplashScreen } from 'src/theme/core/loading';
 
 import { CheckoutContext } from './checkout-context';
 

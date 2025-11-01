@@ -31,7 +31,7 @@ export const useNotifier = () => {
 type Props = {
   children: React.ReactNode;
 };
-export function Notifier({ children }: Props) {
+export const Notifier = ({ children }: Props) => {
   // state
   const [notifier, setNotifier] = useState<NotifierSchema | null>(null);
 
