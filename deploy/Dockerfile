@@ -8,8 +8,8 @@ WORKDIR /app
 # Copy package files
 COPY package.json yarn.lock ./
 
-# Install dependencies
-RUN yarn install --frozen-lockfile
+# Install dependencies with memory optimization
+RUN yarn install --frozen-lockfile --network-timeout 600000
 
 # Copy source code
 COPY . .
@@ -18,15 +18,14 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
 ENV DISABLE_ESLINT_PLUGIN=true
-ENV NODE_OPTIONS="--max-old-space-size=3072"
 # Set API URL for build time (use external API)
 ENV NEXT_PUBLIC_SERVER_URL=https://api-dev-minimal-v700.pages.dev
-# Skip type checking and dynamic params generation during build
-RUN yarn next build --no-lint
 
-# Build Storybook with reduced memory usage
-ENV NODE_OPTIONS="--max-old-space-size=2048"
-RUN yarn build-storybook --quiet
+# Build Next.js with memory limit (skip type checking and linting)
+RUN NODE_OPTIONS="--max-old-space-size=4096" yarn next build --no-lint
+
+# Build Storybook with memory limit
+RUN NODE_OPTIONS="--max-old-space-size=4096" yarn build-storybook --quiet
 
 # Stage 2: Production image with nginx and Node.js
 FROM node:20-alpine AS runner
@@ -45,9 +44,9 @@ RUN addgroup --system --gid 1001 nodejs \
     && adduser --system --uid 1001 nextjs
 
 # Copy Next.js standalone build
-COPY --from=builder --chown=nextjs:nodejs /app/.next ./
-#COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-#COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 
 # Copy Storybook build to nginx html directory
 COPY --from=builder /app/storybook-static /usr/share/nginx/html/storybook
