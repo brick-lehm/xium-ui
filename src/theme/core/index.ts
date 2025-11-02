@@ -6,9 +6,9 @@ export * from './shadows';
 
 export * from './palette';
 
-export * from './loading';
+export * from './display/loading';
 
-export * from './notifier'
+export * from './surface/notifier'
 
 export * from './typography';
 

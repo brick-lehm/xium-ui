@@ -1,4 +1,4 @@
-import { LoadingScreen } from 'src/theme/core/loading';
+import { LoadingScreen } from 'src/theme/core/display/loading';
 
 // ----------------------------------------------------------------------
 

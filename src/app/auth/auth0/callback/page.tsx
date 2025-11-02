@@ -1,4 +1,4 @@
-import { SplashScreen } from 'src/theme/core/loading';
+import { SplashScreen } from 'src/theme/core/display/loading';
 
 // ----------------------------------------------------------------------
 

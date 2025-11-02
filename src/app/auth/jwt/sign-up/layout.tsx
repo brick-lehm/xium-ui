@@ -1,4 +1,4 @@
-import { AuthSplitLayout } from 'src/theme/page/auth/jwt/layout/auth-split';
+import { AuthSplitLayout } from 'src/theme/core/usage/auth/jwt/layout/auth-split';
 
 import { GuestGuard } from 'src/auth/guard';
 

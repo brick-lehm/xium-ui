@@ -18,7 +18,7 @@ import { darken, lighten, alpha as hexAlpha } from '@mui/material/styles';
 import { fDateTime } from 'src/utils/format-time';
 
 import { CONFIG } from 'src/global-config';
-import { LoadingScreen } from 'src/theme/core/loading';
+import { LoadingScreen } from 'src/theme/core/display/loading';
 
 import { Label } from 'src/components/label';
 import { Editor } from 'src/components/editor';
