@@ -13,7 +13,7 @@ import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 import { Editor } from 'src/theme/core/system/editor';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

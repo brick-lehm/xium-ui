@@ -1,4 +1,4 @@
-import type { IconifyName } from 'src/components/iconify';
+import type { IconifyName } from 'src/theme/core/display/iconify';
 
 import { varAlpha } from 'minimal-shared/utils';
 
@@ -8,7 +8,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 import { fCurrency, fShortenNumber } from 'src/utils/format-number';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

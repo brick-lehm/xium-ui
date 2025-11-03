@@ -23,7 +23,7 @@ import { useGetProducts } from 'src/actions/product';
 import { DashboardContent } from 'src/layouts/dashboard';
 
 import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { EmptyContent } from 'src/components/empty-content';
 import { ConfirmDialog } from 'src/components/custom-dialog';
 import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';

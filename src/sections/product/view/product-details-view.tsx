@@ -18,7 +18,7 @@ import { paths } from 'src/routes/paths';
 import { PRODUCT_PUBLISH_OPTIONS } from 'src/_mock';
 import { DashboardContent } from 'src/layouts/dashboard';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { ProductDetailsReview } from '../product-details-review';
 import { ProductDetailsSummary } from '../product-details-summary';

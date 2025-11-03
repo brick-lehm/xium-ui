@@ -14,7 +14,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { ComponentBox, ComponentLayout } from '../../layout';
 

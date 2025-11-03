@@ -18,7 +18,7 @@ import { fIsAfter, fIsBetween } from 'src/utils/format-time';
 import { DashboardContent } from 'src/layouts/dashboard';
 import { _tours, _tourGuides, TOUR_SORT_OPTIONS, TOUR_SERVICE_OPTIONS } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { EmptyContent } from 'src/components/empty-content';
 import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 

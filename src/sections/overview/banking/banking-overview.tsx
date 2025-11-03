@@ -13,7 +13,7 @@ import { useTheme } from '@mui/material/styles';
 import { fPercent, fCurrency } from 'src/utils/format-number';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Chart, useChart } from 'src/components/chart';
 
 // ----------------------------------------------------------------------

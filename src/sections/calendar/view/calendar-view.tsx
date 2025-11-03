@@ -25,7 +25,7 @@ import { DashboardContent } from 'src/layouts/dashboard';
 import { CALENDAR_COLOR_OPTIONS } from 'src/_mock/_calendar';
 import { updateEvent, useGetEvents } from 'src/actions/calendar';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { CalendarRoot } from '../styles';
 import { useEvent } from '../hooks/use-event';

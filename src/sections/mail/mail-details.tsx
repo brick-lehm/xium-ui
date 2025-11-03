@@ -22,7 +22,7 @@ import { LoadingScreen } from 'src/theme/core/display/loading';
 
 import { Label } from 'src/components/label';
 import { Editor } from 'src/theme/core/system/editor';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Markdown } from 'src/components/markdown';
 import { Scrollbar } from 'src/components/scrollbar';
 import { EmptyContent } from 'src/components/empty-content';

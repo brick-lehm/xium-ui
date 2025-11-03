@@ -18,7 +18,7 @@ import { RouterLink } from 'src/routes/components';
 
 import { _jobs } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { SearchNotFound } from 'src/components/search-not-found';
 
 // ----------------------------------------------------------------------

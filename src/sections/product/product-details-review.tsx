@@ -13,7 +13,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 import { fShortenNumber } from 'src/utils/format-number';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { ProductReviewList } from './product-review-list';
 import { ProductReviewCreateForm } from './product-review-create-form';

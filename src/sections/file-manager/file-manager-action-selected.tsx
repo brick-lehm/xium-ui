@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Portal from '@mui/material/Portal';
 import Checkbox from '@mui/material/Checkbox';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

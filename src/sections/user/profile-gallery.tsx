@@ -9,7 +9,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { fDate } from 'src/utils/format-time';
 
 import { Image } from 'src/components/image';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Lightbox, useLightbox } from 'src/components/lightbox';
 
 // ----------------------------------------------------------------------

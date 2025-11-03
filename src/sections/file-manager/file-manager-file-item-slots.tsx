@@ -17,7 +17,7 @@ import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
 
 import { CONFIG } from 'src/global-config';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { FileThumbnail } from 'src/components/file-thumbnail';
 
 // ----------------------------------------------------------------------

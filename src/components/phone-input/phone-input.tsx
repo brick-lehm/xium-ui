@@ -16,7 +16,7 @@ import { inputBaseClasses } from '@mui/material/InputBase';
 
 import { countries } from 'src/assets/data/countries';
 
-import { Iconify } from '../iconify';
+import { Iconify } from '../../theme/core/display/iconify';
 import { CountryListPopover } from './list-popover';
 
 // ----------------------------------------------------------------------

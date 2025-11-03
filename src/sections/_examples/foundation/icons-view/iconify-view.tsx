@@ -1,7 +1,7 @@
 'use client';
 
 import type { BoxProps } from '@mui/material/Box';
-import type { IconifyName } from 'src/components/iconify';
+import type { IconifyName } from 'src/theme/core/display/iconify';
 
 import { useState, useCallback } from 'react';
 import { useCopyToClipboard } from 'minimal-shared/hooks';
@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import InputAdornment from '@mui/material/InputAdornment';
 
 import { toast } from 'src/components/snackbar';
-import { Iconify, iconSets } from 'src/components/iconify';
+import { Iconify, iconSets } from 'src/theme/core/display/iconify';
 import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 // ----------------------------------------------------------------------

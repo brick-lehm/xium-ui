@@ -10,7 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import CardHeader from '@mui/material/CardHeader';
 import ListItemText from '@mui/material/ListItemText';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Scrollbar } from 'src/components/scrollbar';
 
 // ----------------------------------------------------------------------

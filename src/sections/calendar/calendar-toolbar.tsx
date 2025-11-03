@@ -1,5 +1,5 @@
 import type { ICalendarView } from 'src/types/calendar';
-import type { IconifyName } from 'src/components/iconify';
+import type { IconifyName } from 'src/theme/core/display/iconify';
 import type { UseCalendarReturn } from './hooks/use-calendar';
 
 import { usePopover } from 'minimal-shared/hooks';
@@ -15,7 +15,7 @@ import ToggleButton from '@mui/material/ToggleButton';
 import LinearProgress from '@mui/material/LinearProgress';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { CustomPopover } from 'src/components/custom-popover';
 
 // ----------------------------------------------------------------------

@@ -28,7 +28,7 @@ import Input, { inputClasses } from '@mui/material/Input';
 
 import { fCurrency } from 'src/utils/format-number';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Carousel, useCarousel, CarouselArrowFloatButtons } from 'src/components/carousel';
 
 // ----------------------------------------------------------------------

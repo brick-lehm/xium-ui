@@ -11,7 +11,7 @@ import CardHeader from '@mui/material/CardHeader';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogActions from '@mui/material/DialogActions';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { PaymentCardItem } from '../payment/payment-card-item';
 import { PaymentCardCreateForm } from '../payment/payment-card-create-form';

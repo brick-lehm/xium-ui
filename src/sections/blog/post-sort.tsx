@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { CustomPopover } from 'src/components/custom-popover';
 
 // ----------------------------------------------------------------------

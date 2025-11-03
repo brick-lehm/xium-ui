@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 
 import { colorKeys } from 'src/theme/core';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { ComponentBox, contentStyles } from '../../layout';
 

@@ -33,7 +33,7 @@ import {
 } from 'src/assets/illustrations';
 
 import { Logo } from 'src/components/logo';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { SvgColor } from 'src/components/svg-color';
 import { FlagIcon } from 'src/components/flag-icon';
 import { FileThumbnail } from 'src/components/file-thumbnail';

@@ -9,7 +9,7 @@ import { useTheme } from '@mui/material/styles';
 
 import { fNumber, fPercent } from 'src/utils/format-number';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Chart, useChart } from 'src/components/chart';
 
 // ----------------------------------------------------------------------

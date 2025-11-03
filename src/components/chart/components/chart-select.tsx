@@ -10,7 +10,7 @@ import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import ButtonBase from '@mui/material/ButtonBase';
 
-import { Iconify } from '../../iconify';
+import { Iconify } from '../../../theme/core/display/iconify';
 import { CustomPopover } from '../../custom-popover';
 
 // ----------------------------------------------------------------------

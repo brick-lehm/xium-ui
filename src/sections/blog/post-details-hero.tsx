@@ -16,7 +16,7 @@ import { fDate } from 'src/utils/format-time';
 
 import { _socials } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { useFilePreview } from 'src/components/file-thumbnail';
 
 // ----------------------------------------------------------------------

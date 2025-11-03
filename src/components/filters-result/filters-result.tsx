@@ -6,7 +6,7 @@ import type { Theme, SxProps } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 
-import { Iconify } from '../iconify';
+import { Iconify } from '../../theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

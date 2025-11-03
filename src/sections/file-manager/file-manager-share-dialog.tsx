@@ -9,7 +9,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogActions from '@mui/material/DialogActions';
 import InputAdornment from '@mui/material/InputAdornment';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Scrollbar } from 'src/components/scrollbar';
 
 import { FileManagerInvitedItem } from './file-manager-invited-item';

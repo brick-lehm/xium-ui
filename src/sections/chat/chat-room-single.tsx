@@ -8,7 +8,7 @@ import Avatar from '@mui/material/Avatar';
 import Collapse from '@mui/material/Collapse';
 import Typography from '@mui/material/Typography';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { CollapseButton } from './styles';
 

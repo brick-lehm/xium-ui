@@ -13,7 +13,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 import { _addressBooks } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { AddressListDialog } from '../address';
 

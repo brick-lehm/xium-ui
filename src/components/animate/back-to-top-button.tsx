@@ -7,7 +7,7 @@ import { useBackToTop } from 'minimal-shared/hooks';
 
 import Fab from '@mui/material/Fab';
 
-import { Iconify } from '../iconify';
+import { Iconify } from '../../theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

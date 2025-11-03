@@ -14,7 +14,7 @@ import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
 import InputAdornment from '@mui/material/InputAdornment';
 
-import { Iconify } from '../iconify';
+import { Iconify } from '../../theme/core/display/iconify';
 import { FlagIcon } from '../flag-icon';
 import { SearchNotFound } from '../search-not-found';
 

@@ -3,7 +3,7 @@ import type { BoxProps } from '@mui/material/Box';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

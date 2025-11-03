@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 
 import { _mock } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { varTap, varHover, transitionTap, transitionHover } from 'src/components/animate';
 
 import { contentStyles } from '../../../layout';

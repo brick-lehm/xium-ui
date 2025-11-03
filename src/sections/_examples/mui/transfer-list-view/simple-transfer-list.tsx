@@ -9,7 +9,7 @@ import { useTheme } from '@mui/material/styles';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemButton from '@mui/material/ListItemButton';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { not, intersection } from './enhanced-transfer-list';
 

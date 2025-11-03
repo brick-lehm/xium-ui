@@ -5,7 +5,7 @@ import { paths } from 'src/routes/paths';
 import { CONFIG } from 'src/global-config';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { SvgColor } from 'src/components/svg-color';
 
 // ----------------------------------------------------------------------

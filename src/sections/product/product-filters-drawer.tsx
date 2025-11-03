@@ -19,7 +19,7 @@ import Typography from '@mui/material/Typography';
 import { inputBaseClasses } from '@mui/material/InputBase';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Scrollbar } from 'src/components/scrollbar';
 import { ColorPicker } from 'src/components/color-utils';
 import { NumberInput } from 'src/components/number-input';

@@ -9,7 +9,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import { Form, Field } from 'src/theme/core/form/hook-form/client';
 
 import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

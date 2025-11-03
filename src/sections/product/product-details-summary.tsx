@@ -22,7 +22,7 @@ import { fCurrency, fShortenNumber } from 'src/utils/format-number';
 import { Form, Field } from 'src/theme/core/form/hook-form/client';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { ColorPicker } from 'src/components/color-utils';
 import { NumberInput } from 'src/components/number-input';
 

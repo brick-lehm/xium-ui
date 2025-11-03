@@ -6,7 +6,7 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 
 import { Logo } from 'src/components/logo';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { NavBasicMobile, NavBasicDesktop } from 'src/components/nav-basic';
 
 import { NAV_BASIC_ITEMS } from './data';

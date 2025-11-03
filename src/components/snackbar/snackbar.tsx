@@ -2,7 +2,7 @@
 
 import Portal from '@mui/material/Portal';
 
-import { Iconify } from '../iconify';
+import { Iconify } from '../../theme/core/display/iconify';
 import { SnackbarRoot } from './styles';
 import { snackbarClasses } from './classes';
 

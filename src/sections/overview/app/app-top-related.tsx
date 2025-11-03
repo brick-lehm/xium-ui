@@ -17,7 +17,7 @@ import { svgIconClasses } from '@mui/material/SvgIcon';
 import { fData, fCurrency, fShortenNumber } from 'src/utils/format-number';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Scrollbar } from 'src/components/scrollbar';
 
 // ----------------------------------------------------------------------

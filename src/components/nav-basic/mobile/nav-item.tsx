@@ -9,7 +9,7 @@ import Tooltip from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
 
-import { Iconify } from '../../iconify';
+import { Iconify } from '../../../theme/core/display/iconify';
 import { createNavItem } from '../utils';
 import { navItemStyles, navBasicClasses } from '../styles';
 

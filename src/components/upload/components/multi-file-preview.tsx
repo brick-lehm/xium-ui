@@ -9,7 +9,7 @@ import ListItemText from '@mui/material/ListItemText';
 
 import { fData } from 'src/utils/format-number';
 
-import { Iconify } from '../../iconify';
+import { Iconify } from '../../../theme/core/display/iconify';
 import { uploadClasses } from '../classes';
 import { getFileMeta, FileThumbnail, useFilesPreview } from '../../file-thumbnail';
 

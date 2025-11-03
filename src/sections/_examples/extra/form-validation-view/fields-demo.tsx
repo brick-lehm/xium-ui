@@ -16,7 +16,7 @@ import { today } from 'src/utils/format-time';
 
 import { Form, Field } from 'src/theme/core/form/hook-form/client';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { FieldsSchema } from './schema';
 import { ComponentBox } from '../../layout';

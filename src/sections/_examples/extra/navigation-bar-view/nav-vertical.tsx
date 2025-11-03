@@ -16,7 +16,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 import { CONFIG } from 'src/global-config';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { SvgColor } from 'src/components/svg-color';
 import {
   navSectionCssVars,

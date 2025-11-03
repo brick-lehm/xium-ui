@@ -11,7 +11,7 @@ import IconButton from '@mui/material/IconButton';
 
 import { RouterLink } from 'src/routes/components';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { CustomPopover } from 'src/components/custom-popover';
 
 // ----------------------------------------------------------------------

@@ -8,7 +8,7 @@ import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
 import { _mock } from 'src/_mock';
 import { colorKeys } from 'src/theme/core';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { ComponentBox, ComponentLayout } from '../../layout';
 

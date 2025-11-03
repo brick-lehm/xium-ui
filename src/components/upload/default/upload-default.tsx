@@ -10,7 +10,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 import { UploadIllustration } from 'src/assets/illustrations';
 
-import { Iconify } from '../../iconify';
+import { Iconify } from '../../../theme/core/display/iconify';
 import { uploadClasses } from '../classes';
 import { RejectedFiles } from '../components/rejected-files';
 import { MultiFilePreview } from '../components/multi-file-preview';

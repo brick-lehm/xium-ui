@@ -13,7 +13,7 @@ import { fCurrency } from 'src/utils/format-number';
 
 import { Label } from 'src/components/label';
 import { Image } from 'src/components/image';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { ColorPreview } from 'src/components/color-utils';
 
 import { useCheckoutContext } from '../checkout/context';

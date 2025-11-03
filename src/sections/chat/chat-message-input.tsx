@@ -13,7 +13,7 @@ import { today } from 'src/utils/format-time';
 
 import { sendMessage, createConversation } from 'src/actions/chat';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { useMockedUser } from 'src/auth/hooks';
 

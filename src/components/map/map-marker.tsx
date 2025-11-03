@@ -5,7 +5,7 @@ import type { Theme, SxProps } from '@mui/material/styles';
 
 import { Marker } from 'react-map-gl/maplibre';
 
-import { Iconify } from '../iconify';
+import { Iconify } from '../../theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

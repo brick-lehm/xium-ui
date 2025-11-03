@@ -18,7 +18,7 @@ import { svgIconClasses } from '@mui/material/SvgIcon';
 import Badge, { badgeClasses } from '@mui/material/Badge';
 import { inputBaseClasses } from '@mui/material/InputBase';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { CustomPopover } from 'src/components/custom-popover';
 
 import { useMockedUser } from 'src/auth/hooks';

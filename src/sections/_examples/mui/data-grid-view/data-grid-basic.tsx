@@ -3,7 +3,7 @@ import type { IDateValue } from 'src/types/common';
 
 import { DataGrid } from '@mui/x-data-grid';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { CustomGridActionsCellItem } from 'src/components/custom-data-grid';
 
 // ----------------------------------------------------------------------

@@ -16,7 +16,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogActions from '@mui/material/DialogActions';
 import FormHelperText from '@mui/material/FormHelperText';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { PaymentCardCreateForm } from '../payment/payment-card-create-form';
 

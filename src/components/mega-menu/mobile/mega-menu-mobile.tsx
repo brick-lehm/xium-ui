@@ -12,7 +12,7 @@ import Drawer, { drawerClasses } from '@mui/material/Drawer';
 
 import { usePathname } from 'src/routes/hooks';
 
-import { Iconify } from '../../iconify';
+import { Iconify } from '../../../theme/core/display/iconify';
 import { Nav, NavUl } from '../components';
 import { Scrollbar } from '../../scrollbar';
 import { NavListDrawer } from './nav-list-drawer';

@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { dndClasses } from './classes';
 

@@ -19,7 +19,7 @@ import { Form, Field } from 'src/theme/core/form/hook-form/client';
 import { createEvent, updateEvent, deleteEvent } from 'src/actions/calendar';
 
 import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Scrollbar } from 'src/components/scrollbar';
 import { ColorPicker } from 'src/components/color-utils';
 

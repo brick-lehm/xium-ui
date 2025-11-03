@@ -15,7 +15,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import { fDateRangeShortLabel } from 'src/utils/format-time';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { FileThumbnail } from 'src/components/file-thumbnail';
 import { CustomPopover } from 'src/components/custom-popover';
 import { CustomDateRangePicker } from 'src/components/custom-date-range-picker';

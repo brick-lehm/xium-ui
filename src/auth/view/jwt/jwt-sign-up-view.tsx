@@ -18,7 +18,7 @@ import { useRouter } from 'src/routes/hooks';
 import { SignUpForm , schemaUtils } from 'src/theme';
 import { Field } from 'src/theme/core/form/hook-form/client';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { FormHead } from 'src/auth/components/form-head';
 

@@ -17,7 +17,7 @@ import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
 
 import { fToNow } from 'src/utils/format-time';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { CustomPopover } from 'src/components/custom-popover';
 
 import { ChatHeaderSkeleton } from './chat-skeleton';

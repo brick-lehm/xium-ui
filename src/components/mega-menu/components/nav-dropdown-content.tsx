@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import { RouterLink } from 'src/routes/components';
 
 import { NavUl } from './nav-elements';
-import { Iconify } from '../../iconify';
+import { Iconify } from '../../../theme/core/display/iconify';
 import { NavSubList } from './nav-sub-list';
 import { megaMenuClasses } from '../styles';
 import { NavCarousel } from './nav-carousel';

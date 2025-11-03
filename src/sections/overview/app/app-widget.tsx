@@ -1,6 +1,6 @@
 import type { BoxProps } from '@mui/material/Box';
 import type { ChartOptions } from 'src/components/chart';
-import type { IconifyName } from 'src/components/iconify';
+import type { IconifyName } from 'src/theme/core/display/iconify';
 
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
@@ -9,7 +9,7 @@ import { fNumber } from 'src/utils/format-number';
 
 import { CONFIG } from 'src/global-config';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { SvgColor } from 'src/components/svg-color';
 import { Chart, useChart } from 'src/components/chart';
 

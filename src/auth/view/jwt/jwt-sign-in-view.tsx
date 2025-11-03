@@ -20,7 +20,7 @@ import { RouterLink } from 'src/routes/components';
 import { Form, Field } from 'src/theme/core/form/hook-form/client';
 import { schemaUtils } from 'src/theme/core/form/hook-form/server';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { useAuthContext } from '../../hooks';
 import { getErrorMessage } from '../../utils';

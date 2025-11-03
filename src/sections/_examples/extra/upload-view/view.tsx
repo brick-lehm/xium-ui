@@ -13,7 +13,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 
 import { fData } from 'src/utils/format-number';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Upload, UploadBox, UploadAvatar } from 'src/components/upload';
 
 import { ComponentLayout } from '../../layout';

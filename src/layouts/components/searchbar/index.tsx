@@ -21,7 +21,7 @@ import MenuItem, { menuItemClasses } from '@mui/material/MenuItem';
 import InputBase, { inputBaseClasses } from '@mui/material/InputBase';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Scrollbar } from 'src/components/scrollbar';
 import { SearchNotFound } from 'src/components/search-not-found';
 

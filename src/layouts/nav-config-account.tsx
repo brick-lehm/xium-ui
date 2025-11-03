@@ -1,6 +1,6 @@
 import type { AccountDrawerProps } from './components/account-drawer';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

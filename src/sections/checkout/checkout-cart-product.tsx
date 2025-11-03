@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import { fCurrency } from 'src/utils/format-number';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { ColorPreview } from 'src/components/color-utils';
 import { NumberInput } from 'src/components/number-input';
 

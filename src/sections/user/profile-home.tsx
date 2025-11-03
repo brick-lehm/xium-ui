@@ -19,7 +19,7 @@ import { fNumber } from 'src/utils/format-number';
 
 import { _socials } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { ProfilePostItem } from './profile-post-item';
 

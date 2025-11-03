@@ -16,7 +16,7 @@ import { styled, useTheme } from '@mui/material/styles';
 import { CONFIG } from 'src/global-config';
 import { primaryColorPresets } from 'src/theme/with-settings';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { varFade, MotionViewport } from 'src/components/animate';
 
 import { SectionTitle } from './components/section-title';

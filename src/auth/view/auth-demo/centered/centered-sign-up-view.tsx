@@ -16,7 +16,7 @@ import { RouterLink } from 'src/routes/components';
 
 import { Form, Field } from 'src/theme/core/form/hook-form/client';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { AnimateLogoRotate } from 'src/components/animate';
 
 import { schemaUtils } from '../../../../theme';

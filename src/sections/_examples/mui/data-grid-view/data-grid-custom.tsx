@@ -23,7 +23,7 @@ import { fPercent } from 'src/utils/format-number';
 import { fDate, fTime } from 'src/utils/format-time';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { EmptyContent } from 'src/components/empty-content';
 import {
   ToolbarContainer,

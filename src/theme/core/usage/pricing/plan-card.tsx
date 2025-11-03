@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import Box, { type BoxProps } from '@mui/material/Box';
 
 import { paths } from '../../../../routes/paths';
-import { Iconify } from '../../../../components/iconify';
+import { Iconify } from '../../display/iconify';
 import { varFade, varScale } from '../../../../components/animate';
 
 export type PlanCardProps = BoxProps & {

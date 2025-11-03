@@ -7,7 +7,7 @@ import { CONFIG } from 'src/global-config';
 import { DashboardContent } from 'src/layouts/dashboard';
 import { _bankingContacts, _bankingCreditCard, _bankingRecentTransitions } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify/iconify';
+import { Iconify } from 'src/theme/core/display/iconify/iconify';
 
 import { BankingContacts } from '../banking-contacts';
 import { BankingOverview } from '../banking-overview';

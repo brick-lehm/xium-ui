@@ -9,7 +9,7 @@ import Tooltip from '@mui/material/Tooltip';
 
 import { colorKeys } from 'src/theme/core';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { varTap, transitionTap } from 'src/components/animate';
 
 import { ComponentBox } from '../../layout';

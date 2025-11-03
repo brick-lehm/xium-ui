@@ -1,7 +1,7 @@
 import type { BoxProps } from '@mui/material/Box';
 import type { TypographyProps } from '@mui/material/Typography';
 import type { IKanbanTask } from 'src/types/kanban';
-import type { IconifyName, IconifyProps } from 'src/components/iconify';
+import type { IconifyName, IconifyProps } from 'src/theme/core/display/iconify';
 
 import { m } from 'framer-motion';
 
@@ -11,7 +11,7 @@ import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { imageClasses } from 'src/components/image';
 
 import { kanbanClasses } from '../classes';

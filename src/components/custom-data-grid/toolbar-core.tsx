@@ -31,7 +31,7 @@ import {
 
 import { ExportIcon, FilterIcon, ViewColumnsIcon } from 'src/theme/core/components/mui-x-data-grid';
 
-import { Iconify } from '../iconify';
+import { Iconify } from '../../theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

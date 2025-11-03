@@ -4,7 +4,7 @@ import { varAlpha } from 'minimal-shared/utils';
 
 import IconButton from '@mui/material/IconButton';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { NumberInput } from 'src/components/number-input';
 
 import { ComponentBox } from '../../layout';

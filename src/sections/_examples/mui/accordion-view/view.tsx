@@ -13,7 +13,7 @@ import Accordion, { accordionClasses } from '@mui/material/Accordion';
 
 import { _mock } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { ComponentBox, ComponentLayout } from '../../layout';
 

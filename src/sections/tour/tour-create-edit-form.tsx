@@ -30,7 +30,7 @@ import { schemaUtils } from 'src/theme/core/form/hook-form/server';
 import { _tags, _tourGuides, TOUR_SERVICE_OPTIONS } from 'src/_mock';
 
 import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

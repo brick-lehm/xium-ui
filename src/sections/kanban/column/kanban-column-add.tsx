@@ -12,7 +12,7 @@ import ClickAwayListener from '@mui/material/ClickAwayListener';
 
 import { createColumn } from 'src/actions/kanban';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

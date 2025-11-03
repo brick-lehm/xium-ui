@@ -16,7 +16,7 @@ import Autocomplete, { autocompleteClasses } from '@mui/material/Autocomplete';
 import { RouterLink } from 'src/routes/components';
 import { useRouter, usePathname } from 'src/routes/hooks';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { SearchNotFound } from 'src/components/search-not-found';
 
 // ----------------------------------------------------------------------

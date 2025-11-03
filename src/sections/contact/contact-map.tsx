@@ -3,7 +3,7 @@ import type { Theme, SxProps } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import { useColorScheme } from '@mui/material/styles';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import {
   Map,
   MapPopup,

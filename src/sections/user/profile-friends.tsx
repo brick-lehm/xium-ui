@@ -15,7 +15,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 
 import { _socials } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { CustomPopover } from 'src/components/custom-popover';
 import { SearchNotFound } from 'src/components/search-not-found';
 

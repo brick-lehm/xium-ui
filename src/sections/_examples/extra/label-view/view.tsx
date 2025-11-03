@@ -7,7 +7,7 @@ import Tooltip from '@mui/material/Tooltip';
 import { colorKeys } from 'src/theme/core';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { ComponentBox, ComponentLayout } from '../../layout';
 

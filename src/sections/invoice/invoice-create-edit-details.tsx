@@ -16,7 +16,7 @@ import { inputBaseClasses } from '@mui/material/InputBase';
 import { INVOICE_SERVICE_OPTIONS } from 'src/_mock';
 import { Field } from 'src/theme/core/form/hook-form/client';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { InvoiceTotalSummary } from './invoice-total-summary';
 

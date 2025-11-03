@@ -16,7 +16,7 @@ import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { _socials } from 'src/_mock';
 import { ComingSoonIllustration } from 'src/assets/illustrations';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

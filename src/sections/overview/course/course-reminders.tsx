@@ -13,7 +13,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 import { fDateTime } from 'src/utils/format-time';
 import { fPercent } from 'src/utils/format-number';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

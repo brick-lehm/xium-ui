@@ -19,7 +19,7 @@ import { primaryColorPresets } from 'src/theme/with-settings';
 
 import { Label } from '../../label';
 import { settingIcons } from './icons';
-import { Iconify } from '../../iconify';
+import { Iconify } from '../../../theme/core/display/iconify';
 import { BaseOption } from './base-option';
 import { Scrollbar } from '../../scrollbar';
 import { SmallBlock, LargeBlock } from './styles';

@@ -15,7 +15,7 @@ import Pagination from '@mui/material/Pagination';
 
 import { fetcher } from 'src/lib/axios';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { TableSkeleton, TableHeadCustom } from 'src/components/table';
 
 // ----------------------------------------------------------------------

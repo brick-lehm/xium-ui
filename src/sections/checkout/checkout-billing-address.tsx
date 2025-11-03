@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 
 import { _addressBooks } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { useCheckoutContext } from './context';
 import { CheckoutSummary } from './checkout-summary';

@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Collapse from '@mui/material/Collapse';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { FileManagerPanel } from './file-manager-panel';
 import { FileManagerFileItem } from './file-manager-file-item';

@@ -3,7 +3,7 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import {
   Carousel,
   useCarousel,

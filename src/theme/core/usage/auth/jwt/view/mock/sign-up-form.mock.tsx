@@ -6,7 +6,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 
 import { schemaUtils } from 'src/theme/core/index';
 
-import { Iconify } from '../../../../../../../components/iconify';
+import { Iconify } from '../../../../../display/iconify';
 import { Field } from '../../../../../form/hook-form/client';
 
 export type SignUpSchemaTypeMock = z.infer<typeof SignUpSchemaMock>;

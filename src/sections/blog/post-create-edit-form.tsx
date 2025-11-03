@@ -26,7 +26,7 @@ import { Form, Field } from 'src/theme/core/form/hook-form/client';
 import { schemaUtils } from 'src/theme/core/form/hook-form/server';
 
 import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { PostDetailsPreview } from './post-details-preview';
 

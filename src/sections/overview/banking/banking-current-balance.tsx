@@ -12,7 +12,7 @@ import { fCurrency } from 'src/utils/format-number';
 
 import { CONFIG } from 'src/global-config';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { CustomPopover } from 'src/components/custom-popover';
 import { Carousel, useCarousel, CarouselDotButtons } from 'src/components/carousel';
 

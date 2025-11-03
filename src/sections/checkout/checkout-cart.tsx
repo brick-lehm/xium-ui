@@ -11,7 +11,7 @@ import { RouterLink } from 'src/routes/components';
 
 import { CONFIG } from 'src/global-config';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { EmptyContent } from 'src/components/empty-content';
 
 import { useCheckoutContext } from './context';

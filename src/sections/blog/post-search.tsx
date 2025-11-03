@@ -19,7 +19,7 @@ import { RouterLink } from 'src/routes/components';
 
 import { useSearchPosts } from 'src/actions/blog';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { SearchNotFound } from 'src/components/search-not-found';
 
 // ----------------------------------------------------------------------

@@ -12,7 +12,7 @@ import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { varTap, varHover, transitionTap } from 'src/components/animate';
 
 import { ComponentBox, ComponentLayout } from '../../layout';

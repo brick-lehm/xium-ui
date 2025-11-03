@@ -201,6 +201,31 @@ function copyJsonFiles(srcDir, distDir) {
   }
 }
 
+// Copy CSS files from src to dist
+function copyCssFiles(srcDir, distDir) {
+  const editorComponentsPath = path.join(srcDir, 'theme/core/system/editor/components');
+
+  if (fs.existsSync(editorComponentsPath)) {
+    const destComponentsPath = path.join(distDir, 'theme/core/system/editor/components');
+
+    if (!fs.existsSync(destComponentsPath)) {
+      fs.mkdirSync(destComponentsPath, { recursive: true });
+    }
+
+    const files = fs.readdirSync(editorComponentsPath);
+
+    files.forEach(file => {
+      if (file.endsWith('.css')) {
+        const srcPath = path.join(editorComponentsPath, file);
+        const destPath = path.join(destComponentsPath, file);
+
+        fs.copyFileSync(srcPath, destPath);
+        console.log(`Copied CSS: ${file}`);
+      }
+    });
+  }
+}
+
 // Main execution
 const distDir = path.join(__dirname, '../dist');
 const srcDir = path.join(__dirname, '../src');
@@ -209,6 +234,7 @@ const esmDir = path.join(distDir, 'esm');
 moveEsmFiles(esmDir, distDir);
 fixCommonJsAbsolutePaths(distDir);
 copyJsonFiles(srcDir, distDir);
+copyCssFiles(srcDir, distDir);
 createPackageJson();
 
 console.log('Post-build script completed successfully!');

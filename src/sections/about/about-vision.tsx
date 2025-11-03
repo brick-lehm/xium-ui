@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import { CONFIG } from 'src/global-config';
 
 import { Image } from 'src/components/image';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { varFade, MotionViewport } from 'src/components/animate';
 
 // ----------------------------------------------------------------------

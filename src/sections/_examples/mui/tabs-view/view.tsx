@@ -11,7 +11,7 @@ import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Paper from '@mui/material/Paper';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { ComponentBox, contentStyles, ComponentLayout } from '../../layout';
 

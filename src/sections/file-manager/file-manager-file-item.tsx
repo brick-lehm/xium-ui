@@ -13,7 +13,7 @@ import { fData } from 'src/utils/format-number';
 import { fDateTime } from 'src/utils/format-time';
 
 import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { ConfirmDialog } from 'src/components/custom-dialog';
 import { CustomPopover } from 'src/components/custom-popover';
 

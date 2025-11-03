@@ -17,7 +17,7 @@ import { paths } from 'src/routes/paths';
 
 import { CONFIG } from 'src/global-config';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { varFade, varScale, MotionViewport } from 'src/components/animate';
 
 import { SectionTitle } from './components/section-title';

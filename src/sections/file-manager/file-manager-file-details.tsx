@@ -18,7 +18,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import { fData } from 'src/utils/format-number';
 import { fDateTime } from 'src/utils/format-time';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Scrollbar } from 'src/components/scrollbar';
 import { FileThumbnail, detectFileFormat } from 'src/components/file-thumbnail';
 

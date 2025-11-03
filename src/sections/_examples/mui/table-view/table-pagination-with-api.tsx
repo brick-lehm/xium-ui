@@ -17,7 +17,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 
 import { fetcher } from 'src/lib/axios';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import {
   useTable,
   TableNoData,

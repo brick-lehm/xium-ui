@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 import { fToNow } from 'src/utils/format-time';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { useMockedUser } from 'src/auth/hooks';
 

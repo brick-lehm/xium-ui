@@ -18,7 +18,7 @@ import { DashboardContent } from 'src/layouts/dashboard';
 import { _allFiles, FILE_TYPE_OPTIONS } from 'src/_mock';
 
 import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { EmptyContent } from 'src/components/empty-content';
 import { ConfirmDialog } from 'src/components/custom-dialog';
 import { detectFileFormat } from 'src/components/file-thumbnail';

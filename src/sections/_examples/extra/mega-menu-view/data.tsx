@@ -3,7 +3,7 @@ import type { MegaMenuProps } from 'src/components/mega-menu';
 import { _mock } from 'src/_mock';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

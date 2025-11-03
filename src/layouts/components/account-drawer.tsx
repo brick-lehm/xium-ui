@@ -22,7 +22,7 @@ import { RouterLink } from 'src/routes/components';
 import { _mock } from 'src/_mock';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { Scrollbar } from 'src/components/scrollbar';
 import { AnimateBorder } from 'src/components/animate';
 

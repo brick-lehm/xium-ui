@@ -17,7 +17,7 @@ import { fCurrency } from 'src/utils/format-number';
 import { fDateTime, fDateRangeShortLabel } from 'src/utils/format-time';
 
 import { Image } from 'src/components/image';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { CustomPopover } from 'src/components/custom-popover';
 
 // ----------------------------------------------------------------------

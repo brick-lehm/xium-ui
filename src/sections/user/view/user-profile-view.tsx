@@ -14,7 +14,7 @@ import { usePathname, useSearchParams } from 'src/routes/hooks';
 import { DashboardContent } from 'src/layouts/dashboard';
 import { _userAbout, _userFeeds, _userFriends, _userGallery, _userFollowers } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { useMockedUser } from 'src/auth/hooks';

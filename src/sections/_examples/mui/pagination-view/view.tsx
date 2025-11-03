@@ -10,7 +10,7 @@ import Pagination from '@mui/material/Pagination';
 import PaginationItem from '@mui/material/PaginationItem';
 import TablePagination from '@mui/material/TablePagination';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 import { PaginationItems } from './pagination-items';
 import { ComponentBox, contentStyles, ComponentLayout } from '../../layout';

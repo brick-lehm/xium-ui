@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 
 import { Field } from 'src/theme/core/form/hook-form/client';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 
 // ----------------------------------------------------------------------
 

@@ -7,7 +7,7 @@ import ReactLightbox, { useLightboxState } from 'yet-another-react-lightbox';
 
 import Box from '@mui/material/Box';
 
-import { Iconify } from '../iconify';
+import { Iconify } from '../../theme/core/display/iconify';
 import { getPlugins } from './utils';
 import { lightboxClasses } from './classes';
 

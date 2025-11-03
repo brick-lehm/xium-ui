@@ -3,7 +3,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
 import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { MegaMenuHorizontal } from 'src/components/mega-menu';
 
 import { MEGA_MENU_ITEMS_WITH_RENDER } from './data';

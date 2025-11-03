@@ -21,7 +21,7 @@ import { fData } from 'src/utils/format-number';
 import { fDate, fTime } from 'src/utils/format-time';
 
 import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/theme/core/display/iconify';
 import { ConfirmDialog } from 'src/components/custom-dialog';
 import { FileThumbnail } from 'src/components/file-thumbnail';
 import { CustomPopover } from 'src/components/custom-popover';
