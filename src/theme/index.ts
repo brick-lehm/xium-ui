@@ -1,10 +1,10 @@
 export * from './core';
-export * from './core/usage/pricing';
-export * from './core/usage/auth';
 export * from './theme-config';
-export * from './core/surface/notifier';
 export * from './theme-provider';
+export * from './core/usage/auth';
+export * from './core/usage/pricing';
 export * from '../components/animate';
+export * from './core/surface/notifier';
 
 export {StandaloneThemeProvider} from './standalone-theme-provider'
 

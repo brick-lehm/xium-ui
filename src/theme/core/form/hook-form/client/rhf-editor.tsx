@@ -1,8 +1,8 @@
-import type { EditorProps } from '../../../../../components/editor';
+import type { EditorProps } from '../../../system/editor';
 
 import { Controller, useFormContext } from 'react-hook-form';
 
-import { Editor } from '../../../../../components/editor';
+import { Editor } from '../../../system/editor';
 
 // ----------------------------------------------------------------------
 

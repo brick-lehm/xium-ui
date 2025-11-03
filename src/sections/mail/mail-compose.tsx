@@ -12,7 +12,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-import { Editor } from 'src/components/editor';
+import { Editor } from 'src/theme/core/system/editor';
 import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------

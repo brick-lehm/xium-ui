@@ -9,7 +9,7 @@ import Menu from '@mui/material/Menu';
 import { listClasses } from '@mui/material/List';
 import ButtonBase, { buttonBaseClasses } from '@mui/material/ButtonBase';
 
-import { Iconify } from '../../iconify';
+import { Iconify } from '../../../../../components/iconify';
 import { ToolbarItem } from './toolbar-item';
 
 // ----------------------------------------------------------------------

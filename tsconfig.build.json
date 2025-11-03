@@ -24,6 +24,7 @@
     "src/index.ts",
     "src/theme/**/*.ts",
     "src/theme/**/*.tsx",
+    "src/theme/core/system/editor/**/*.css",
     "src/components/settings/**/*.ts",
     "src/components/settings/**/*.tsx",
     "src/components/snackbar/**/*.ts",

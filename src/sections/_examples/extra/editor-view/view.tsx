@@ -7,7 +7,7 @@ import Paper from '@mui/material/Paper';
 import Switch from '@mui/material/Switch';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
-import { Editor } from 'src/components/editor';
+import { Editor } from 'src/theme/core/system/editor';
 import { Markdown } from 'src/components/markdown';
 
 import { ComponentLayout } from '../../layout';
