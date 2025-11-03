@@ -59,16 +59,8 @@ export function JwtSignUpView() {
     password: '@2Minimal',
   };
 
-  const methods = useForm({
-    resolver: zodResolver(SignUpSchema),
-    defaultValues,
-  });
 
-  const {
-    handleSubmit,
-  } = methods;
-
-  const onSubmit = handleSubmit(async (data) => {
+  const onSubmit = async (data: any) => {
     try {
       await signUp({
         email: data.email,
@@ -84,7 +76,7 @@ export function JwtSignUpView() {
       const feedbackMessage = getErrorMessage(error);
       setErrorMessage(feedbackMessage);
     }
-  });
+  };
 
   const renderForm = () => (
     <Box sx={{ gap: 3, display: 'flex', flexDirection: 'column' }}>
