@@ -67,7 +67,6 @@ export function JwtSignUpView() {
 
   const {
     handleSubmit,
-    formState: { isSubmitting },
   } = methods;
 
   const onSubmit = handleSubmit(async (data) => {

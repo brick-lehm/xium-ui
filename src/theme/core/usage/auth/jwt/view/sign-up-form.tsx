@@ -55,10 +55,11 @@ export function SignUpForm({ signUpSchema, defaultValues,
             fullWidth
             color="inherit"
             size="large"
-            type="submit"
+            type='button'
             variant="contained"
             loading={isSubmitting}
             loadingIndicator="アカウントを作成中..."
+            onClick={signUpSubmitAction}
           >
             アカウントを作成する
           </Button>
