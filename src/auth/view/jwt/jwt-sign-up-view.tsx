@@ -16,9 +16,8 @@ import InputAdornment from '@mui/material/InputAdornment';
 import { useRouter } from 'src/routes/hooks';
 
 import { SignUpForm , schemaUtils } from 'src/theme';
-import { Field } from 'src/theme/core/form/hook-form/client';
-
 import { Iconify } from 'src/theme/core/display/iconify';
+import { Field } from 'src/theme/core/form/hook-form/client';
 
 import { FormHead } from 'src/auth/components/form-head';
 
