@@ -19,7 +19,7 @@ export type JwtSignUpViewProps<
   defaultValues: T;
   signUpSchema: z.ZodObject<T>;
   showErrorAction?: (message?: string) => void;
-  signUpSubmitAction?: (e?: React.BaseSyntheticEvent) => Promise<void>;
+  signUpSubmitAction?: (e?: Record<string, never>) => void;
   header?: React.ReactNode;
   form: React.ReactNode;
   signupTerms?: React.ReactNode;
@@ -36,7 +36,13 @@ export function SignUpForm({ signUpSchema, defaultValues,
 
   const {
     formState: { isSubmitting },
+    handleSubmit,
   } = methods;
+
+  const formSubmit = handleSubmit(async (data) => {
+
+    signUpSubmitAction?.(data);
+  });
 
   return (
     <>
@@ -59,7 +65,7 @@ export function SignUpForm({ signUpSchema, defaultValues,
             variant="contained"
             loading={isSubmitting}
             loadingIndicator="アカウントを作成中..."
-            onClick={signUpSubmitAction}
+            onClick={formSubmit}
           >
             アカウントを作成する
           </Button>
